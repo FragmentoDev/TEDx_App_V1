@@ -23,6 +23,7 @@ public class Horarios extends AppCompatActivity {
         setContentView(R.layout.activity_horarios);
         rv= findViewById(R.id.rv_horario);
 
+        listaConferencistas.clear();
         listaConferencistas.add(new Conferencistas("Fernando Lerma", "Desarrollo Movil", "Introducción a aplicaciones moviles",4 , 5));
         listaConferencistas.add(new Conferencistas("Eider Diaz", "Desarrollo Movil Avanzado", "Desarrollo de aplicaciones moviles mas avanzadas",5 , 6));
         listaConferencistas.add(new Conferencistas("Oscar Hernandez", "Emprendimiento", "Aprender a emprender",6 , 7));
