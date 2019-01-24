@@ -60,9 +60,7 @@ public class Horarios extends AppCompatActivity {
         adapter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Index= rv.getChildAdapterPosition(v);
-                Intent intent= new Intent(Horarios.this, Datos.class);
-                startActivity(intent);
+
             }
         });
     }

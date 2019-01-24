@@ -1,6 +1,8 @@
 package com.fernandoalberto.tedxcompanion;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -39,7 +41,34 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     @Override
     public void onBindViewHolder(@NonNull CardviewHolder cardviewHolder, int i) {
         Conferencistas conferencista= conferencistas.get(i);
-        //cardviewHolder.ivPerfil.setImageDrawable();
+        switch (i){
+            case 0: cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina);
+                break;
+            case 1: cardviewHolder.ivPerfil.setImageResource(R.drawable.alejandro_felix);
+                break;
+            case 2: cardviewHolder.ivPerfil.setImageResource(R.drawable.miguel_renteria);
+                break;
+            case 3: cardviewHolder.ivPerfil.setImageResource(R.drawable.ana_retamoza);
+                break;
+            case 4: cardviewHolder.ivPerfil.setImageResource(R.drawable.gerardo_lopez);
+                break;
+            case 5: cardviewHolder.ivPerfil.setImageResource(R.drawable.mariela_guadalupe);
+                break;
+            case 6: cardviewHolder.ivPerfil.setImageResource(R.drawable.luis_escobedo);
+                break;
+            case 7: cardviewHolder.ivPerfil.setImageResource(R.drawable.krishna_ramirez);
+                break;
+            case 8: cardviewHolder.ivPerfil.setImageResource(R.drawable.maria_stone);
+                break;
+            case 9: cardviewHolder.ivPerfil.setImageResource(R.drawable.hector_serrano);
+                break;
+            case 10: cardviewHolder.ivPerfil.setImageResource(R.drawable.gilberto_castro);
+                break;
+            case 11: cardviewHolder.ivPerfil.setImageResource(R.drawable.ayesha_peraza);
+                break;
+            case 12: cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro);
+                break;
+        }
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + " - " + conferencista.getHora_Final());
