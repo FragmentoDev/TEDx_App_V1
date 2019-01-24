@@ -6,10 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Horarios, WEB;
+    ImageView Horarios, WEB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         WEB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ted.com/tedx/events/31019"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.tedxlosmochis.com/"));
                 startActivity(browserIntent);
             }
         });

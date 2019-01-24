@@ -1,10 +1,13 @@
 package com.fernandoalberto.tedxcompanion;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,9 +17,14 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
 
     ArrayList<Conferencistas> conferencistas;
     private View.OnClickListener listener;
+    private Context mContext;
+    private View view;
+    int lastPosition=0;
 
-    public adapter_rv_cardview(ArrayList<Conferencistas> conferencistas){
+    public adapter_rv_cardview(ArrayList<Conferencistas> conferencistas, Context mContext, View view){
         this.conferencistas= conferencistas;
+        this.mContext= mContext;
+        this.view= view;
     }
 
     @Override
@@ -27,6 +35,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         return holder;
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull CardviewHolder cardviewHolder, int i) {
         Conferencistas conferencista= conferencistas.get(i);
@@ -34,6 +43,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + " - " + conferencista.getHora_Final());
+        cardviewHolder.txtDescripcion.setText(conferencista.getDescipcion());
     }
 
     @Override
@@ -54,7 +64,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
 
     public static class CardviewHolder extends RecyclerView.ViewHolder{
         ImageView ivPerfil;
-        TextView txtNombre, txtTaller, txtHorario;
+        TextView txtNombre, txtTaller, txtHorario, txtDescripcion;
 
         public CardviewHolder(View itemView){
             super(itemView);
@@ -62,6 +72,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             txtNombre= itemView.findViewById(R.id.tv_Nombre_cardview);
             txtTaller= itemView.findViewById(R.id.tv_Taller_cardview);
             txtHorario= itemView.findViewById(R.id.tv_Hora_cardview);
+            txtDescripcion= itemView.findViewById(R.id.tv_Descripcion_cardview);
         }
     }
 }

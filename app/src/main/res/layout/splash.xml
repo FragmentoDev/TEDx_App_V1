@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,36 +11,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        android:gravity="center">
+        android:gravity="center"
+        android:weightSum="3.7">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="TEDxLosMochis" />
+        <ImageView
+            android:id="@+id/splashlogotedx"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/logo_tedex"
+            android:scaleType="fitCenter"
+            android:padding="40dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="LINE UP Y HORARIOS" />
+        <TextView
+            android:id="@+id/splash_texto"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:background="#000"
+            android:textColor="#fff"
+            android:text="TEDx Companion"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="25sp" />
 
         <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:scrollbarSize="200dp"/>
+            android:id="@+id/spalshProgressbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="40dp"/>
 
-            <ImageView
-                android:layout_gravity="end"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="20dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/ic_perfil"/>
+        <TextView
+            android:id="@+id/splash_texto_elaborado"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Elaborada por:"
+            android:gravity="center"
+            android:textSize="15sp"/>
 
+        <ImageView
+            android:id="@+id/spashfragmento"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/logo_fragmento_developing_ideas"
+            android:padding="15dp"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/spashcreditos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/creditos_negro"
+            android:paddingTop="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:scaleY="1.2"
+            android:scaleType="fitCenter"/>
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
