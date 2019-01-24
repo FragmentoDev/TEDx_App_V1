@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,13 +21,19 @@ public class Horarios extends AppCompatActivity {
     static ArrayList<Conferencistas> listaConferencistas = new ArrayList<Conferencistas>();
     RecyclerView rv;
     adapter_rv_cardview adapter;
-    static int Index;
+    ImageView logo, creditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_horarios);
         rv= findViewById(R.id.rv_horario);
+        logo= findViewById(R.id.iv_horarios_tedx);
+        creditos= findViewById(R.id.iv_horarios_creditos);
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
+
+        logo.setAnimation(myanim);
+        creditos.setAnimation(myanim);
         // TODO: 19/01/2019 Algo 
         listaConferencistas.clear();
         listaConferencistas.add(new Conferencistas("Mirna Medina", "Activista Social", "Licenciada en Educación. Fundadora y directora del grupo “LasRastreadoras del Fuerte”. Taller de aplicación de ciencias forenses en la búsqueda de desaparecidos en Guatemala Defensora de los derechos humanos en México.",4 , 5));

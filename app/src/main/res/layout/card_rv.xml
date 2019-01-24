@@ -6,12 +6,19 @@
     android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
-        android:layout_width = "match_parent"
-        android:layout_height = "wrap_content"
-        android:backgroundTint="#E4E4E4"
-        android:layout_marginHorizontal="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F8F8"
+        android:elevation="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0.0px"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        card_view:cardElevation="10dp"
+        card_view:cardPreventCornerOverlap="false"
+        android:layout_marginHorizontal="25dp"
         android:layout_marginVertical="20dp"
-        card_view:cardCornerRadius="60dp">
+        card_view:cardCornerRadius="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,9 +28,9 @@
             <ImageView
                 android:id="@+id/iv_cardview"
                 android:layout_width="match_parent"
-                android:layout_height="210dp"
+                android:layout_height="100dp"
                 android:src="@drawable/ic_perfil"
-                android:scaleType="fitXY" />
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:id="@+id/tv_Nombre_cardview"
@@ -33,7 +40,7 @@
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="#BB0707"
-                android:textSize="30sp"/>
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/tv_Taller_cardview"
@@ -43,7 +50,7 @@
                 android:textColor="#000"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="30sp"/>
+                android:textSize="20sp"/>
 
                 <TextView
                     android:id="@+id/tv_Hora_cardview"
@@ -54,7 +61,7 @@
                     android:text="Horario:"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:textSize="30sp"/>
+                    android:textSize="20sp"/>
 
             <TextView
                 android:paddingHorizontal="30dp"
@@ -66,8 +73,7 @@
                 android:text="Descripción"
                 android:textAlignment="center"
                 android:textColor="#535353"
-                android:textStyle="italic"
-                android:textSize="25sp"/>
+                android:textSize="13sp"/>
 
         </LinearLayout>​
 
