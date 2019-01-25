@@ -46,4 +46,7 @@
     <color name="WetAsphalt">#34495e </color>
     <color name="MidnightBlue">#2c3e50 </color>
     <color name="Concrete">#95a5a6 </color>
+
+    <color name="Button">#000000</color>
+
 </resources>

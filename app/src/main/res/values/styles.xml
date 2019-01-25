@@ -10,8 +10,13 @@
 
     <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
         <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
-        <item name="colorControlHighlight">@color/MidnightBlue</item>
-        <item name="colorAccent">@color/PeterRiver</item>
+        <item name="colorControlHighlight">@color/Button</item>
+        <item name="colorAccent">@color/Button</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/Button</item>
+        <item name="colorControlHighlight">@color/Pomergranate</item>
     </style>
 
 </resources>

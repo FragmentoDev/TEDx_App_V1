@@ -1,5 +1,6 @@
 package com.fernandoalberto.tedxcompanion;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.Resources;
 import android.support.annotation.DrawableRes;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -40,39 +42,44 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
 
     @Override
     public void onBindViewHolder(@NonNull CardviewHolder cardviewHolder, int i) {
+        view= cardviewHolder.itemView;
+        //if (i >= lastPosition) {
+            Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.item_scroll);
+            view.startAnimation(animation);
+       // }
+        //lastPosition = i;
         Conferencistas conferencista= conferencistas.get(i);
         switch (i){
-            case 0: cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina);
+            case 0: cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina_circulo);
                 break;
-            case 1: cardviewHolder.ivPerfil.setImageResource(R.drawable.alejandro_felix);
+            case 1: cardviewHolder.ivPerfil.setImageResource(R.drawable.alejandro_felix_circulo);
                 break;
-            case 2: cardviewHolder.ivPerfil.setImageResource(R.drawable.miguel_renteria);
+            case 2: cardviewHolder.ivPerfil.setImageResource(R.drawable.miguel_renteria_circulo);
                 break;
-            case 3: cardviewHolder.ivPerfil.setImageResource(R.drawable.ana_retamoza);
+            case 3: cardviewHolder.ivPerfil.setImageResource(R.drawable.ana_retamoza_circulo);
                 break;
-            case 4: cardviewHolder.ivPerfil.setImageResource(R.drawable.gerardo_lopez);
+            case 4: cardviewHolder.ivPerfil.setImageResource(R.drawable.gerardo_lopez_circulo);
                 break;
-            case 5: cardviewHolder.ivPerfil.setImageResource(R.drawable.mariela_guadalupe);
+            case 5: cardviewHolder.ivPerfil.setImageResource(R.drawable.mariela_guadalupe_circulo);
                 break;
-            case 6: cardviewHolder.ivPerfil.setImageResource(R.drawable.luis_escobedo);
+            case 6: cardviewHolder.ivPerfil.setImageResource(R.drawable.luis_escobedo_circulo);
                 break;
-            case 7: cardviewHolder.ivPerfil.setImageResource(R.drawable.krishna_ramirez);
+            case 7: cardviewHolder.ivPerfil.setImageResource(R.drawable.krishna_ramirez_circulo);
                 break;
-            case 8: cardviewHolder.ivPerfil.setImageResource(R.drawable.maria_stone);
+            case 8: cardviewHolder.ivPerfil.setImageResource(R.drawable.maria_stone_circulo);
                 break;
-            case 9: cardviewHolder.ivPerfil.setImageResource(R.drawable.hector_serrano);
+            case 9: cardviewHolder.ivPerfil.setImageResource(R.drawable.hector_serrano_circulo);
                 break;
-            case 10: cardviewHolder.ivPerfil.setImageResource(R.drawable.gilberto_castro);
+            case 10: cardviewHolder.ivPerfil.setImageResource(R.drawable.gilberto_castro_circulo);
                 break;
-            case 11: cardviewHolder.ivPerfil.setImageResource(R.drawable.ayesha_peraza);
+            case 11: cardviewHolder.ivPerfil.setImageResource(R.drawable.ayesha_peraza_circulo);
                 break;
-            case 12: cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro);
+            case 12: cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro_circulo);
                 break;
         }
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + " - " + conferencista.getHora_Final());
-        cardviewHolder.txtDescripcion.setText(conferencista.getDescipcion());
     }
 
     @Override
@@ -93,7 +100,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
 
     public static class CardviewHolder extends RecyclerView.ViewHolder{
         ImageView ivPerfil;
-        TextView txtNombre, txtTaller, txtHorario, txtDescripcion;
+        TextView txtNombre, txtTaller, txtHorario;
 
         public CardviewHolder(View itemView){
             super(itemView);
@@ -101,7 +108,6 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             txtNombre= itemView.findViewById(R.id.tv_Nombre_cardview);
             txtTaller= itemView.findViewById(R.id.tv_Taller_cardview);
             txtHorario= itemView.findViewById(R.id.tv_Hora_cardview);
-            txtDescripcion= itemView.findViewById(R.id.tv_Descripcion_cardview);
         }
     }
 }

@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class Splash extends AppCompatActivity {
 
     private final int Duracion= 3200;
-    ImageView logo, fragmento, creditos;
+    ImageView logo, fragmento, creditosizq, creditosder;
     TextView texto, elaborado;
     ProgressBar progreso;
 
@@ -31,7 +31,8 @@ public class Splash extends AppCompatActivity {
         progreso= findViewById(R.id.spalshProgressbar);
         elaborado= findViewById(R.id.splash_texto_elaborado);
         fragmento= findViewById(R.id.spashfragmento);
-        creditos= findViewById(R.id.spashcreditos);
+        creditosizq= findViewById(R.id.splashcontactosizq);
+        creditosder= findViewById(R.id.splashcontactosder);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
 
@@ -40,7 +41,8 @@ public class Splash extends AppCompatActivity {
         progreso.setAnimation(myanim);
         elaborado.setAnimation(myanim);
         fragmento.setAnimation(myanim);
-        creditos.setAnimation(myanim);
+        creditosizq.setAnimation(myanim);
+        creditosder.setAnimation(myanim);
 
         new Handler().postDelayed(new Runnable() {
             @Override
