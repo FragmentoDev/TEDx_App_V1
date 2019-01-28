@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -24,6 +25,7 @@ public class Horarios extends AppCompatActivity {
     LinearLayout linearLayout;
     adapter_rv_cardview adapter;
     ImageView logo, creditosizq, creditosder;
+    CardView cv_registro, cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo, cv_despedida;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,71 @@ public class Horarios extends AppCompatActivity {
         LayoutAnimationController layoutAnimationController= AnimationUtils.loadLayoutAnimation(getApplicationContext(), R.anim.layout_slide_from_bottom);
         linearLayout.setLayoutAnimation(layoutAnimationController);
         linearLayout.scheduleLayoutAnimation();
+
+        cv_registro=findViewById(R.id.h_cv_Registro);
+        cv_mira_futuro= findViewById(R.id.h_cv_Mira_futuro);
+        cv_personalidad=findViewById(R.id.h_cv_Personalidad);
+        cv_radical= findViewById(R.id.h_cv_Radical);
+        cv_prospectiva=findViewById(R.id.h_cv_Prospectiva);
+        cv_pasion_haver= findViewById(R.id.h_cv_Pasion_hacer);
+        cv_detras_miedo=findViewById(R.id.h_cv_Detras_miedo);
+        cv_despedida=findViewById(R.id.h_cv_Despedida);
+
+        cv_registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Registro", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_mira_futuro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Mira Futuro", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_personalidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Personalidad", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_radical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Radical", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_prospectiva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Prospectiva", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_pasion_haver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Pasión por hacer", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_detras_miedo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Detras del miedo", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        cv_despedida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Despedida", Toast.LENGTH_SHORT).show();
+            }
+        });
         /*rv= findViewById(R.id.rv_horario);
         rv.setLayoutManager(new LinearLayoutManager(Horarios.this));
         adapter = new adapter_rv_cardview(Splash.listaConferencistas, getApplicationContext(), rv);

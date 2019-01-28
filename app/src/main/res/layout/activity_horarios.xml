@@ -52,7 +52,8 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                card_view:cardCornerRadius="15dp"
+                android:id="@+id/h_cv_Registro">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -121,6 +122,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/h_cv_Mira_futuro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#F8F8F8"
@@ -323,6 +325,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
+                android:id="@+id/h_cv_Personalidad"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -522,6 +525,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
+                android:id="@+id/h_cv_Radical"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -721,6 +725,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
+                android:id="@+id/h_cv_Prospectiva"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -920,6 +925,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
+                android:id="@+id/h_cv_Pasion_hacer"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -1119,6 +1125,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
+                android:id="@+id/h_cv_Detras_miedo"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -1237,6 +1244,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
+                android:id="@+id/h_cv_Despedida"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
