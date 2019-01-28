@@ -49,37 +49,37 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
        // }
         //lastPosition = i;
         Conferencistas conferencista= conferencistas.get(i);
-        switch (i){
-            case 0: cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina_circulo);
+        switch (conferencista.getNombre()){
+            case "Mirna Medina": cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina_circulo);
                 break;
-            case 1: cardviewHolder.ivPerfil.setImageResource(R.drawable.alejandro_felix_circulo);
+            case "Alejandro Félix": cardviewHolder.ivPerfil.setImageResource(R.drawable.alejandro_felix_circulo);
                 break;
-            case 2: cardviewHolder.ivPerfil.setImageResource(R.drawable.miguel_renteria_circulo);
+            case "Miguel Ángel Vicente Renteria": cardviewHolder.ivPerfil.setImageResource(R.drawable.miguel_renteria_circulo);
                 break;
-            case 3: cardviewHolder.ivPerfil.setImageResource(R.drawable.ana_retamoza_circulo);
+            case "Ana Retamoza": cardviewHolder.ivPerfil.setImageResource(R.drawable.ana_retamoza_circulo);
                 break;
-            case 4: cardviewHolder.ivPerfil.setImageResource(R.drawable.gerardo_lopez_circulo);
+            case "Gerardo López Romero": cardviewHolder.ivPerfil.setImageResource(R.drawable.gerardo_lopez_circulo);
                 break;
-            case 5: cardviewHolder.ivPerfil.setImageResource(R.drawable.mariela_guadalupe_circulo);
+            case "Mariela Guadalupe Hernández": cardviewHolder.ivPerfil.setImageResource(R.drawable.mariela_guadalupe_circulo);
                 break;
-            case 6: cardviewHolder.ivPerfil.setImageResource(R.drawable.luis_escobedo_circulo);
+            case "Luis Daniel Cordero Escobedo": cardviewHolder.ivPerfil.setImageResource(R.drawable.luis_escobedo_circulo);
                 break;
-            case 7: cardviewHolder.ivPerfil.setImageResource(R.drawable.krishna_ramirez_circulo);
+            case "Krishna Daniela Valdez Ramírez": cardviewHolder.ivPerfil.setImageResource(R.drawable.krishna_ramirez_circulo);
                 break;
-            case 8: cardviewHolder.ivPerfil.setImageResource(R.drawable.maria_stone_circulo);
+            case "María Stone": cardviewHolder.ivPerfil.setImageResource(R.drawable.maria_stone_circulo);
                 break;
-            case 9: cardviewHolder.ivPerfil.setImageResource(R.drawable.hector_serrano_circulo);
+            case "Hector Serrano Castro": cardviewHolder.ivPerfil.setImageResource(R.drawable.hector_serrano_circulo);
                 break;
-            case 10: cardviewHolder.ivPerfil.setImageResource(R.drawable.gilberto_castro_circulo);
+            case "Gilberto Castro": cardviewHolder.ivPerfil.setImageResource(R.drawable.gilberto_castro_circulo);
                 break;
-            case 11: cardviewHolder.ivPerfil.setImageResource(R.drawable.ayesha_peraza_circulo);
+            case "Ayesha Peraza": cardviewHolder.ivPerfil.setImageResource(R.drawable.ayesha_peraza_circulo);
                 break;
-            case 12: cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro_circulo);
+            case "Dylan Kenjiro": cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro_circulo);
                 break;
         }
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
-        cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + " - " + conferencista.getHora_Final());
+        cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
     }
 
     @Override

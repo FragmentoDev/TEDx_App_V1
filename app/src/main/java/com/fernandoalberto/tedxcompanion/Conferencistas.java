@@ -4,13 +4,13 @@ public class Conferencistas {
     private String Nombre;
     private String Taller;
     private String Descipcion;
-    private int Hora_Inicio;
-    private int Hora_Final;
+    private String Hora_Inicio;
+    private String Hora_Final;
 
     public Conferencistas() {
     }
 
-    public Conferencistas(String nombre, String taller, String descipcion, int hora_Inicio, int hora_Final) {
+    public Conferencistas(String nombre, String taller, String descipcion, String hora_Inicio, String hora_Final) {
         Nombre = nombre;
         Taller = taller;
         Descipcion = descipcion;
@@ -42,19 +42,19 @@ public class Conferencistas {
         Descipcion = descipcion;
     }
 
-    public int getHora_Inicio() {
+    public String getHora_Inicio() {
         return Hora_Inicio;
     }
 
-    public void setHora_Inicio(int hora_Inicio) {
+    public void setHora_Inicio(String hora_Inicio) {
         Hora_Inicio = hora_Inicio;
     }
 
-    public int getHora_Final() {
+    public String getHora_Final() {
         return Hora_Final;
     }
 
-    public void setHora_Final(int hora_Final) {
+    public void setHora_Final(String hora_Final) {
         Hora_Final = hora_Final;
     }
 }

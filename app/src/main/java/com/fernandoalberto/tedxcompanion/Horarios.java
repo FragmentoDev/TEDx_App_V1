@@ -23,9 +23,9 @@ import java.util.ArrayList;
 public class Horarios extends AppCompatActivity {
 
     LinearLayout linearLayout;
-    adapter_rv_cardview adapter;
     ImageView logo, creditosizq, creditosder;
     CardView cv_registro, cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo, cv_despedida;
+    static String Titulo= "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,7 @@ public class Horarios extends AppCompatActivity {
         logo= findViewById(R.id.iv_horarios_tedx);
         creditosizq= findViewById(R.id.horarios_creditos_izq);
         creditosder= findViewById(R.id.horarios_creditos_der);
+
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
 
         logo.setAnimation(myanim);
@@ -59,56 +60,87 @@ public class Horarios extends AppCompatActivity {
         cv_registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Registro", Toast.LENGTH_SHORT).show();
+                Titulo= "Registro y Acceso";
             }
         });
 
         cv_mira_futuro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Mira Futuro", Toast.LENGTH_SHORT).show();
+                Splash.listaClick.clear();
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(1).getNombre(), Splash.listaConferencistas.get(1).getTaller(), Splash.listaConferencistas.get(1).getDescipcion(), "10:00 AM", "10:30 AM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(3).getNombre(), Splash.listaConferencistas.get(3).getTaller(), Splash.listaConferencistas.get(3).getDescipcion(), "10:30 AM", "11:00 AM"));
+                Titulo= "Mira hacia el futuro";
+                Intent intent= new Intent(Horarios.this, DetallesSector.class);
+                startActivity(intent);
             }
         });
 
         cv_personalidad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Personalidad", Toast.LENGTH_SHORT).show();
+                Splash.listaClick.clear();
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(12).getNombre(), Splash.listaConferencistas.get(12).getTaller(), Splash.listaConferencistas.get(12).getDescipcion(), "11:20 AM", "11:50 AM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(1).getNombre(), Splash.listaConferencistas.get(1).getTaller(), Splash.listaConferencistas.get(1).getDescipcion(), "11:50 AM", "12:20 PM"));
+                Titulo= "Personalidad";
+                Intent intent= new Intent(Horarios.this, DetallesSector.class);
+                startActivity(intent);
             }
         });
 
         cv_radical.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Radical", Toast.LENGTH_SHORT).show();
+                Splash.listaClick.clear();
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(4).getNombre(), Splash.listaConferencistas.get(4).getTaller(), Splash.listaConferencistas.get(4).getDescipcion(), "12:40 PM", "1:10 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(9).getNombre(), Splash.listaConferencistas.get(9).getTaller(), Splash.listaConferencistas.get(9).getDescipcion(), "1:10 PM", "1:40 PM"));
+                Titulo= "Radical";
+                Intent intent= new Intent(Horarios.this, DetallesSector.class);
+                startActivity(intent);
             }
         });
 
         cv_prospectiva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Prospectiva", Toast.LENGTH_SHORT).show();
+                Splash.listaClick.clear();
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(11).getNombre(), Splash.listaConferencistas.get(11).getTaller(), Splash.listaConferencistas.get(11).getDescipcion(), "2:00 PM", "2:20 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(10).getNombre(), Splash.listaConferencistas.get(10).getTaller(), Splash.listaConferencistas.get(10).getDescipcion(), "2:20 PM", "2:40 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(8).getNombre(), Splash.listaConferencistas.get(8).getTaller(), Splash.listaConferencistas.get(8).getDescipcion(), "2:40 PM", "3:00 PM"));
+                Titulo= "Prospectiva";
+                Intent intent= new Intent(Horarios.this, DetallesSector.class);
+                startActivity(intent);
             }
         });
 
         cv_pasion_haver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Pasión por hacer", Toast.LENGTH_SHORT).show();
+                Splash.listaClick.clear();
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(7).getNombre(), Splash.listaConferencistas.get(7).getTaller(), Splash.listaConferencistas.get(7).getDescipcion(), "4:30 PM", "5:30 PM"));
+                Titulo= "Pasión por hacer";
+                Intent intent= new Intent(Horarios.this, DetallesSector.class);
+                startActivity(intent);
             }
         });
 
         cv_detras_miedo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Detras del miedo", Toast.LENGTH_SHORT).show();
+                Splash.listaClick.clear();
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(5).getNombre(), Splash.listaConferencistas.get(5).getTaller(), Splash.listaConferencistas.get(5).getDescipcion(), "5:50 PM", "6:10 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(0).getNombre(), Splash.listaConferencistas.get(0).getTaller(), Splash.listaConferencistas.get(0).getDescipcion(), "6:10 PM", "6:30 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(2).getNombre(), Splash.listaConferencistas.get(2).getTaller(), Splash.listaConferencistas.get(2).getDescipcion(), "6:30 PM", "6:50 PM"));
+                Titulo= "Detrás del miedo";
+                Intent intent= new Intent(Horarios.this, DetallesSector.class);
+                startActivity(intent);
             }
         });
 
         cv_despedida.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Despedida", Toast.LENGTH_SHORT).show();
+                Titulo= "Despedida Final";
             }
         });
         /*rv= findViewById(R.id.rv_horario);
