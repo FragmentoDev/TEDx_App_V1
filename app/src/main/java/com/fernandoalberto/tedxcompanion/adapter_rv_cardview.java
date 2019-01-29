@@ -76,6 +76,14 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
                 break;
             case "Dylan Kenjiro": cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro_circulo);
                 break;
+            case "Tim Urban" : cardviewHolder.ivPerfil.setImageResource(R.drawable.tim_urba_circulo);
+                break;
+            case "Jorge Ramos" : cardviewHolder.ivPerfil.setImageResource(R.drawable.jorge_ramos_circulo);
+                break;
+            case "Christoph Niemann" : cardviewHolder.ivPerfil.setImageResource(R.drawable.neimann_circulo);
+                break;
+            case "Jorge Drexler" : cardviewHolder.ivPerfil.setImageResource(R.drawable.jorge_drexler_circulo);
+                break;
         }
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());

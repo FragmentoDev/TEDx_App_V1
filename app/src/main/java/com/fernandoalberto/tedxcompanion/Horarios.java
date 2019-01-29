@@ -80,8 +80,9 @@ public class Horarios extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
-                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(12).getNombre(), Splash.listaConferencistas.get(12).getTaller(), Splash.listaConferencistas.get(12).getDescipcion(), "11:20 AM", "11:50 AM"));
-                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(1).getNombre(), Splash.listaConferencistas.get(1).getTaller(), Splash.listaConferencistas.get(1).getDescipcion(), "11:50 AM", "12:20 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(12).getNombre(), Splash.listaConferencistas.get(12).getTaller(), Splash.listaConferencistas.get(12).getDescipcion(), "11:20 AM", "11:40 AM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(13).getNombre(), Splash.listaConferencistas.get(13).getTaller(), Splash.listaConferencistas.get(13).getDescipcion(), "11:40 AM", "12:00 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(1).getNombre(), Splash.listaConferencistas.get(1).getTaller(), Splash.listaConferencistas.get(1).getDescipcion(), "12:00 AM", "12:20 PM"));
                 Titulo= "Personalidad";
                 Intent intent= new Intent(Horarios.this, DetallesSector.class);
                 startActivity(intent);
@@ -92,8 +93,9 @@ public class Horarios extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
-                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(4).getNombre(), Splash.listaConferencistas.get(4).getTaller(), Splash.listaConferencistas.get(4).getDescipcion(), "12:40 PM", "1:10 PM"));
-                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(9).getNombre(), Splash.listaConferencistas.get(9).getTaller(), Splash.listaConferencistas.get(9).getDescipcion(), "1:10 PM", "1:40 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(4).getNombre(), Splash.listaConferencistas.get(4).getTaller(), Splash.listaConferencistas.get(4).getDescipcion(), "12:40 PM", "1:00 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(9).getNombre(), Splash.listaConferencistas.get(9).getTaller(), Splash.listaConferencistas.get(9).getDescipcion(), "1:00 PM", "1:20 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(14).getNombre(), Splash.listaConferencistas.get(14).getTaller(), Splash.listaConferencistas.get(14).getDescipcion(), "1:20 PM", "1:40 PM"));
                 Titulo= "Radical";
                 Intent intent= new Intent(Horarios.this, DetallesSector.class);
                 startActivity(intent);
@@ -117,7 +119,9 @@ public class Horarios extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
-                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(7).getNombre(), Splash.listaConferencistas.get(7).getTaller(), Splash.listaConferencistas.get(7).getDescipcion(), "4:30 PM", "5:30 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(16).getNombre(), Splash.listaConferencistas.get(16).getTaller(), Splash.listaConferencistas.get(16).getDescipcion(), "4:30 PM", "4:50 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(7).getNombre(), Splash.listaConferencistas.get(7).getTaller(), Splash.listaConferencistas.get(7).getDescipcion(), "4:50 PM", "5:10 PM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(15).getNombre(), Splash.listaConferencistas.get(15).getTaller(), Splash.listaConferencistas.get(15).getDescipcion(), "5:10 PM", "5:30 PM"));
                 Titulo= "Pasión por hacer";
                 Intent intent= new Intent(Horarios.this, DetallesSector.class);
                 startActivity(intent);

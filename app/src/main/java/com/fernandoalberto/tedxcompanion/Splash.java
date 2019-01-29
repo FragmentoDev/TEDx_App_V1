@@ -67,7 +67,10 @@ public class Splash extends AppCompatActivity {
         listaConferencistas.add(new Conferencistas("Ayesha Peraza", "Biotecnóloga", "Biotecnóloga, mamá emprendedora, amante de la ciencia y la educación. Creadora de \"Nature Kids Mx\" y \"Cultiva Orgánico Mx\" proyectos que buscan educar a los niños en temas relacionados con la ciencia y sustentabilidad. \n" +
                 "La idea es inspirar a los niños a ser pequeños científicos con el súper poder de rescatar su planeta.","-" , "-"));
         listaConferencistas.add(new Conferencistas("Dylan Kenjiro", "Músico", "Músico, cantante, productor, compositor, y creador de contenido en internet que su trabajo y pasión lo han llevado a participar en muchas colaboraciones con músicos nacionales e internacionales. Ganador del concurso nacional de canciones por los derechos de los niños de la UNICEF, Dylan se encuentra actualmente en grabaciones de su primer material discográfico.","-" , "-"));
-
+        listaConferencistas.add(new Conferencistas("Tim Urban", "Blogger", "With Wait But Why, Tim Urban demonstrates that complex and long-form writing can stand out in an online wilderness choked with listicles and clickbait.","-" , "-"));
+        listaConferencistas.add(new Conferencistas("Jorge Ramos", "Journalist, news anchor", "Jorge Ramos's work covers the issues that affect the 55 million Latinos in the United States and immigrants all over the world.","-" , "-"));
+        listaConferencistas.add(new Conferencistas("Christoph Niemann", "Illustrator, artist, author", "With charm and incisive wit, Christoph Niemann sketches the moments of our shared experience.","-" , "-"));
+        listaConferencistas.add(new Conferencistas("Jorge Drexler", "Musician, poet", "Jorge Drexler is a musician and the first Uruguayan to win an Oscar. His music plays with genre and influence, combining subtle harmonies and regional styles with electronic effects.","-" , "-"));
 
         new Handler().postDelayed(new Runnable() {
             @Override

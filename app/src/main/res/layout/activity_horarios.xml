@@ -412,7 +412,7 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/ic_perfil"
+                            android:src="@drawable/tim_urba_circulo"
                             app:civ_border_width="2dp"
                             app:civ_border_color="#FF000000"/>
 
@@ -621,7 +621,7 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/ic_perfil"
+                            android:src="@drawable/jorge_ramos_circulo"
                             app:civ_border_width="2dp"
                             app:civ_border_color="#FF000000"/>
 
@@ -1003,7 +1003,7 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/ic_perfil"
+                            android:src="@drawable/jorge_drexler_circulo"
                             app:civ_border_width="2dp"
                             app:civ_border_color="#FF000000"/>
 
@@ -1021,7 +1021,7 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/ic_perfil"
+                            android:src="@drawable/neimann_circulo"
                             app:civ_border_width="2dp"
                             app:civ_border_color="#FF000000"/>
 
