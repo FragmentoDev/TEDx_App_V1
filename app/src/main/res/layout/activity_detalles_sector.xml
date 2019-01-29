@@ -15,7 +15,7 @@
         android:weightSum="9">
 
     <ImageView
-        android:id="@+id/iv_horarios_tedx"
+        android:id="@+id/iv_detalles_tedx"
         android:layout_width="190dp"
         android:layout_height="0dp"
         android:layout_marginLeft="10dp"
@@ -52,7 +52,7 @@
             android:weightSum="1">
 
             <ImageView
-                android:id="@+id/horarios_creditos_izq"
+                android:id="@+id/detalles_creditos_izq"
                 android:layout_width="0dp"
                 android:layout_height="25dp"
                 android:layout_weight="0.5"
@@ -60,7 +60,7 @@
                 android:src="@drawable/creditos_izquierdo_negro" />
 
             <ImageView
-                android:id="@+id/horarios_creditos_der"
+                android:id="@+id/detalles_creditos_der"
                 android:layout_width="0dp"
                 android:layout_height="30dp"
                 android:layout_weight="0.5"

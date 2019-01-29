@@ -143,19 +143,5 @@ public class Horarios extends AppCompatActivity {
                 Titulo= "Despedida Final";
             }
         });
-        /*rv= findViewById(R.id.rv_horario);
-        rv.setLayoutManager(new LinearLayoutManager(Horarios.this));
-        adapter = new adapter_rv_cardview(Splash.listaConferencistas, getApplicationContext(), rv);
-        rv.setAdapter(adapter);
-        rv.setLayoutAnimation(layoutAnimationController);
-        rv.getAdapter().notifyDataSetChanged();
-        rv.scheduleLayoutAnimation();
-
-        adapter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });*/
     }
 }

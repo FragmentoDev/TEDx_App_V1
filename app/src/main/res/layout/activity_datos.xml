@@ -4,7 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_app_tedx"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     tools:context=".Datos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <ImageView
+            android:id="@+id/iv_datos_tedx"
+            android:layout_width="190dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_tedex" />
+
+
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:scaleType="fitXY"
+                android:id="@+id/perfil_iv"/>
+
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/perfil_nombre"
+            android:text="Nombre"
+            android:textStyle="bold"
+            android:textColor="#BB0707"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="30sp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/perfil_taller"
+            android:text="Taller"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="25sp"
+            android:layout_weight="0.5"/>
+
+
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/perfil_descripcion"
+            android:text="Descripcion"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:layout_weight="4.5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/datos_creditos_izq"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:scaleType="fitStart"
+                android:src="@drawable/creditos_izquierdo_negro" />
+
+            <ImageView
+                android:id="@+id/datos_creditos_der"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:scaleType="fitEnd"
+                android:src="@drawable/creditos_derecho_blanco" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 
 </FrameLayout>
