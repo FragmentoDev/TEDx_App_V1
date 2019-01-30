@@ -25,13 +25,16 @@
             android:src="@drawable/logo_tedex" />
 
 
-            <ImageView
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2.5"
-                android:scaleType="fitXY"
-                android:id="@+id/perfil_iv"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:padding="5dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/perfil_iv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/ic_perfil"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#000"/>
 
 
 

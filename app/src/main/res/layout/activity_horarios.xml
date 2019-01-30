@@ -65,6 +65,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Registro y Acceso"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textSize="25sp" />
 
@@ -72,31 +73,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -105,7 +82,16 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="9:00 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
 
                         <TextView
                             android:textColor="#fff"
@@ -113,6 +99,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="10:00 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -147,35 +135,14 @@
                         android:layout_height="wrap_content"
                         android:text="Mira hacia el futuro"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -183,13 +150,25 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="10:00 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_black"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="11:00 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -205,6 +184,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="2"
+                        android:layout_marginVertical="7dp"
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -257,37 +237,14 @@
                         android:layout_height="wrap_content"
                         android:text="Primer Break"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -296,7 +253,16 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="11:00 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
 
                         <TextView
                             android:textColor="#fff"
@@ -304,6 +270,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="11:20 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -338,35 +306,14 @@
                         android:layout_height="wrap_content"
                         android:text="Personalidad"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -374,12 +321,23 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="11:20 AM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_black"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
                             android:text="12:20 PM"
                             android:textAlignment="center"/>
 
@@ -396,6 +354,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
+                        android:layout_marginVertical="7dp"
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -455,39 +414,15 @@
                         android:textColor="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:text="Segundo Break"
                         android:textAlignment="center"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -496,7 +431,16 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="12:20 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
 
                         <TextView
                             android:textColor="#fff"
@@ -504,6 +448,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="12:40 PM"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -538,35 +484,14 @@
                         android:layout_height="wrap_content"
                         android:text="Radical"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -574,13 +499,24 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="12:40 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_black"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="1:40 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -593,6 +529,7 @@
                         android:textSize="20sp"/>
 
                     <LinearLayout
+                        android:layout_marginVertical="7dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -656,14 +593,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tercer Break"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -671,38 +608,25 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:text="1:40 PM"
                             android:textAlignment="center"/>
 
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
+
                         <TextView
                             android:textColor="#fff"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:text="2:00 PM"
                             android:textAlignment="center"/>
 
@@ -738,35 +662,13 @@
                         android:layout_height="wrap_content"
                         android:text="Prospectiva"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -774,12 +676,23 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="2:00 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_black"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:text="3:00 PM"
                             android:textAlignment="center"/>
 
@@ -793,6 +706,7 @@
                         android:textSize="20sp"/>
 
                     <LinearLayout
+                        android:layout_marginVertical="7dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -857,37 +771,13 @@
                         android:layout_height="wrap_content"
                         android:text="Comida"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -896,7 +786,16 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="3:00 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
 
                         <TextView
                             android:textColor="#fff"
@@ -904,6 +803,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="4:30 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -938,35 +839,13 @@
                         android:layout_height="wrap_content"
                         android:text="Pasión por hacer"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -974,12 +853,23 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="4:30 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_black"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:text="5:30 PM"
                             android:textAlignment="center"/>
 
@@ -993,6 +883,7 @@
                         android:textSize="20sp"/>
 
                     <LinearLayout
+                        android:layout_marginVertical="7dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -1056,14 +947,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Cuarto Break"
+                        android:textStyle="bold"
                         android:textAlignment="center"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1071,38 +962,25 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:text="5:30 PM"
                             android:textAlignment="center"/>
 
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
+
                         <TextView
                             android:textColor="#fff"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:text="5:50 PM"
                             android:textAlignment="center"/>
 
@@ -1138,35 +1016,13 @@
                         android:layout_height="wrap_content"
                         android:text="Detrás del miedo"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1174,13 +1030,24 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="5:50 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_black"/>
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="6:50 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -1193,6 +1060,7 @@
                         android:textSize="20sp"/>
 
                     <LinearLayout
+                        android:layout_marginVertical="7dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -1258,37 +1126,13 @@
                         android:layout_height="wrap_content"
                         android:text="Despedida Final"
                         android:textAlignment="center"
+                        android:textStyle="bold"
                         android:textSize="25sp" />
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="2"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Inicio"
-                            android:textAlignment="center"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="Hora Acaba"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="2"
+                        android:weightSum="3"
                         android:orientation="horizontal">
 
                         <TextView
@@ -1297,7 +1141,16 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="6:50 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_time_white"/>
 
                         <TextView
                             android:textColor="#fff"
@@ -1305,6 +1158,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="7:00 PM"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
