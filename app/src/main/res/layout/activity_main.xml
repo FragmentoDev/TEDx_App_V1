@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="40dp"
         android:orientation="vertical">
 
         <Button
@@ -23,7 +23,7 @@
             android:theme="@style/PrimaryButton"
             android:drawableLeft="@drawable/ic_clock"
             android:textAllCaps="false"
-            android:textSize="23sp"
+            android:textSize="20sp"
             android:text="  Horarios para conferencias" />
 
         <Button
@@ -35,7 +35,7 @@
             android:layout_margin="5dp"
             android:drawableLeft="@drawable/ic_find_in_page_black_24dp"
             android:textAllCaps="false"
-            android:textSize="23sp"
+            android:textSize="20sp"
             android:text="  Página WEB" />
 
     </LinearLayout>
