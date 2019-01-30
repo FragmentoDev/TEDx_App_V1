@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,9 @@ import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -23,11 +27,12 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     private View.OnClickListener listener;
     private Context mContext;
     private View view;
-    int lastPosition=0;
+    private final PerfilItemClickListener onPerfilItemClick;
 
-    public adapter_rv_cardview(ArrayList<Conferencistas> conferencistas, Context mContext, View view){
+    public adapter_rv_cardview(ArrayList<Conferencistas> conferencistas, Context mContext, View view, PerfilItemClickListener perfilItemClickListener){
         this.conferencistas= conferencistas;
         this.mContext= mContext;
+        this.onPerfilItemClick= perfilItemClickListener;
         this.view= view;
     }
 
@@ -41,14 +46,14 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
 
 
     @Override
-    public void onBindViewHolder(@NonNull CardviewHolder cardviewHolder, int i) {
+    public void onBindViewHolder(@NonNull final CardviewHolder cardviewHolder, int i) {
         view= cardviewHolder.itemView;
         //if (i >= lastPosition) {
             Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.item_scroll);
             view.startAnimation(animation);
        // }
         //lastPosition = i;
-        Conferencistas conferencista= conferencistas.get(i);
+        final Conferencistas conferencista= conferencistas.get(i);
         switch (conferencista.getNombre()){
             case "Mirna Medina": cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina_circulo);
                 break;
@@ -88,6 +93,19 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
+
+
+        ViewCompat.setTransitionName(cardviewHolder.ivPerfil, conferencista.getNombre());
+
+        cardviewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DetallesSector.indice= cardviewHolder.getAdapterPosition();
+                onPerfilItemClick.onPerfilItemClick(cardviewHolder.getAdapterPosition(), conferencista, cardviewHolder.ivPerfil);
+            }
+        });
+
+
     }
 
     @Override

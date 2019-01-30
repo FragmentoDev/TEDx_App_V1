@@ -1,6 +1,9 @@
 package com.fernandoalberto.tedxcompanion;
 
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
+import android.os.Build;
+import android.support.annotation.DrawableRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
@@ -9,6 +12,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Datos extends AppCompatActivity {
@@ -16,6 +22,7 @@ public class Datos extends AppCompatActivity {
     CircleImageView perfil;
     TextView Nombre, Taller, Descripcion;
     ImageView logo, creditosizq, creditosder;
+    static int drawableRes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +30,7 @@ public class Datos extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_datos);
+        supportPostponeEnterTransition();
 
         logo= findViewById(R.id.iv_datos_tedx);
         creditosizq= findViewById(R.id.datos_creditos_izq);
@@ -40,46 +48,70 @@ public class Datos extends AppCompatActivity {
         Descripcion= findViewById(R.id.perfil_descripcion);
 
         Descripcion.setAnimation(myanim);
+        Nombre.setAnimation(myanim);
+        Taller.setAnimation(myanim);
+
+        Bundle extras = getIntent().getExtras();
 
         switch (Splash.listaClick.get(DetallesSector.indice).getNombre()){
-            case "Mirna Medina": perfil.setImageResource(R.drawable.mirna_medina_circulo);
+            case "Mirna Medina": drawableRes= R.drawable.mirna_medina_circulo;
                 break;
-            case "Alejandro Félix": perfil.setImageResource(R.drawable.alejandro_felix_circulo);
+            case "Alejandro Félix": drawableRes= R.drawable.alejandro_felix_circulo;
                 break;
-            case "Miguel Ángel Vicente Renteria": perfil.setImageResource(R.drawable.miguel_renteria_circulo);
+            case "Miguel Ángel Vicente Renteria": drawableRes= R.drawable.miguel_renteria_circulo;
                 break;
-            case "Ana Retamoza": perfil.setImageResource(R.drawable.ana_retamoza_circulo);
+            case "Ana Retamoza": drawableRes= (R.drawable.ana_retamoza_circulo);
                 break;
-            case "Gerardo López Romero": perfil.setImageResource(R.drawable.gerardo_lopez_circulo);
+            case "Gerardo López Romero": drawableRes=(R.drawable.gerardo_lopez_circulo);
                 break;
-            case "Mariela Guadalupe Hernández": perfil.setImageResource(R.drawable.mariela_guadalupe_circulo);
+            case "Mariela Guadalupe Hernández": drawableRes=(R.drawable.mariela_guadalupe_circulo);
                 break;
-            case "Luis Daniel Cordero Escobedo": perfil.setImageResource(R.drawable.luis_escobedo_circulo);
+            case "Luis Daniel Cordero Escobedo": drawableRes=(R.drawable.luis_escobedo_circulo);
                 break;
-            case "Krishna Daniela Valdez Ramírez":perfil.setImageResource(R.drawable.krishna_ramirez_circulo);
+            case "Krishna Daniela Valdez Ramírez":drawableRes=(R.drawable.krishna_ramirez_circulo);
                 break;
-            case "María Stone": perfil.setImageResource(R.drawable.maria_stone_circulo);
+            case "María Stone": drawableRes=(R.drawable.maria_stone_circulo);
                 break;
-            case "Hector Serrano Castro": perfil.setImageResource(R.drawable.hector_serrano_circulo);
+            case "Hector Serrano Castro": drawableRes=(R.drawable.hector_serrano_circulo);
                 break;
-            case "Gilberto Castro":perfil.setImageResource(R.drawable.gilberto_castro_circulo);
+            case "Gilberto Castro":drawableRes=(R.drawable.gilberto_castro_circulo);
                 break;
-            case "Ayesha Peraza": perfil.setImageResource(R.drawable.ayesha_peraza_circulo);
+            case "Ayesha Peraza": drawableRes=(R.drawable.ayesha_peraza_circulo);
                 break;
-            case "Dylan Kenjiro": perfil.setImageResource(R.drawable.dylan_kenjiro_circulo);
+            case "Dylan Kenjiro": drawableRes=(R.drawable.dylan_kenjiro_circulo);
                 break;
-            case "Tim Urban": perfil.setImageResource(R.drawable.tim_urba_circulo);
+            case "Tim Urban": drawableRes=(R.drawable.tim_urba_circulo);
                 break;
-            case "Jorge Ramos": perfil.setImageResource(R.drawable.jorge_ramos_circulo);
+            case "Jorge Ramos": drawableRes=(R.drawable.jorge_ramos_circulo);
                 break;
-            case "Jorge Drexler": perfil.setImageResource(R.drawable.jorge_drexler_circulo);
+            case "Jorge Drexler": drawableRes=(R.drawable.jorge_drexler_circulo);
                 break;
-            case "Christoph Niemann": perfil.setImageResource(R.drawable.neimann_circulo);
+            case "Christoph Niemann": drawableRes=(R.drawable.neimann_circulo);
                 break;
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            String imageTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
+            perfil.setTransitionName(imageTransitionName);
         }
 
         Nombre.setText(Splash.listaClick.get(DetallesSector.indice).getNombre());
         Taller.setText(Splash.listaClick.get(DetallesSector.indice).getTaller());
         Descripcion.setText(Splash.listaClick.get(DetallesSector.indice).getDescipcion());
+
+        Picasso.get()
+                .load(drawableRes)
+                .noFade()
+                .into(perfil, new Callback() {
+                    @Override
+                    public void onSuccess() {
+                        supportStartPostponedEnterTransition();
+                    }
+
+                    @Override
+                    public void onError(Exception e) {
+                        supportStartPostponedEnterTransition();
+                    }
+                });
     }
 }
