@@ -9,6 +9,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
  */
 
 public interface PerfilItemClickListener {
-    void onPerfilItemClick(int pos, Conferencistas conferencistas, CircleImageView shareImageView);
+    void onPerfilItemClick(int pos, Conferencistas conferencistas, ImageView shareImageView);
 }
 

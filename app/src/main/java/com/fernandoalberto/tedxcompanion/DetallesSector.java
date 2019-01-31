@@ -10,6 +10,7 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Pair;
@@ -30,6 +31,7 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
     adapter_rv_cardview adapter;
     ImageView logo, creditos;
     static int indice;
+    static String Nombre;
     public static final String EXTRA_PERFIL_IMAGE_TRANSITION_NAME = "perfil_image_transition_name";
 
     @Override
@@ -38,6 +40,7 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_detalles_sector);
+
         rv= findViewById(R.id.ds_rv_personas);
 
         logo= findViewById(R.id.iv_detalles_tedx);
@@ -47,19 +50,19 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
 
         logo.setAnimation(myanim);
         creditos.setAnimation(myanim);
+
         LayoutAnimationController layoutAnimationController= AnimationUtils.loadLayoutAnimation(getApplicationContext(), R.anim.layout_slide_from_bottom);
-        rv.setLayoutManager(new LinearLayoutManager(DetallesSector.this));
+        rv.setLayoutManager(new GridLayoutManager(this, 1));
         adapter = new adapter_rv_cardview(Splash.listaClick, getApplicationContext(), rv, this);
         rv.setAdapter(adapter);
         rv.setLayoutAnimation(layoutAnimationController);
         rv.getAdapter().notifyDataSetChanged();
         rv.scheduleLayoutAnimation();
-
     }
 
     @Override
-    public void onPerfilItemClick(int pos, Conferencistas conferencistas, CircleImageView sharedImageView) {
-        Intent intent = new Intent(getApplicationContext(), Datos.class);
+    public void onPerfilItemClick(int pos, Conferencistas conferencistas, ImageView sharedImageView) {
+        Intent intent = new Intent(this, Datos.class);
         intent.putExtra(EXTRA_PERFIL_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(sharedImageView));
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 this,

@@ -92,7 +92,8 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             case "Jorge Drexler" : cardviewHolder.ivPerfil.setImageResource(R.drawable.jorge_drexler_circulo);
                 break;
         }
-        cardviewHolder.txtNombre.setText(conferencista.getNombre());
+
+                        cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
         cardviewHolder.txtTema.setText(Horarios.Titulo);
@@ -103,6 +104,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         cardviewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DetallesSector.Nombre= conferencista.getNombre();
                 DetallesSector.indice= cardviewHolder.getAdapterPosition();
                 onPerfilItemClick.onPerfilItemClick(cardviewHolder.getAdapterPosition(), conferencista, cardviewHolder.ivPerfil);
             }
@@ -128,7 +130,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     }
 
     public static class CardviewHolder extends RecyclerView.ViewHolder{
-        CircleImageView ivPerfil;
+        ImageView ivPerfil;
         TextView txtNombre, txtTaller, txtHorario, txtTema;
 
         public CardviewHolder(View itemView){

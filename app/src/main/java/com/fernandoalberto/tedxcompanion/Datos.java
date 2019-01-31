@@ -50,7 +50,6 @@ public class Datos extends AppCompatActivity {
         Taller.setAnimation(myanim);
 
         Bundle extras = getIntent().getExtras();
-
         switch (Splash.listaClick.get(DetallesSector.indice).getNombre()){
             case "Mirna Medina": drawableRes= R.drawable.mirna_medina_circulo;
                 break;
@@ -93,13 +92,8 @@ public class Datos extends AppCompatActivity {
             perfil.setTransitionName(imageTransitionName);
         }
 
-        Nombre.setText(Splash.listaClick.get(DetallesSector.indice).getNombre());
-        Taller.setText(Splash.listaClick.get(DetallesSector.indice).getTaller());
-        Descripcion.setText(Splash.listaClick.get(DetallesSector.indice).getDescipcion());
-
         Picasso.get()
                 .load(drawableRes)
-                .noFade()
                 .into(perfil, new Callback() {
                     @Override
                     public void onSuccess() {
@@ -108,8 +102,15 @@ public class Datos extends AppCompatActivity {
 
                     @Override
                     public void onError(Exception e) {
-                        supportStartPostponedEnterTransition();
+                        supportFinishAfterTransition();
                     }
                 });
+
+
+        Nombre.setText(Splash.listaClick.get(DetallesSector.indice).getNombre());
+        Taller.setText(Splash.listaClick.get(DetallesSector.indice).getTaller());
+        Descripcion.setText(Splash.listaClick.get(DetallesSector.indice).getDescipcion());
+
+
     }
 }
