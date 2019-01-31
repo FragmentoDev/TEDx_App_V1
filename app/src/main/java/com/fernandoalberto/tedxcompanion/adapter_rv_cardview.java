@@ -21,6 +21,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardview.CardviewHolder> implements View.OnClickListener {
 
     ArrayList<Conferencistas> conferencistas;
@@ -93,6 +95,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
+        cardviewHolder.txtTema.setText(Horarios.Titulo);
 
 
         ViewCompat.setTransitionName(cardviewHolder.ivPerfil, conferencista.getNombre());
@@ -125,8 +128,8 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     }
 
     public static class CardviewHolder extends RecyclerView.ViewHolder{
-        ImageView ivPerfil;
-        TextView txtNombre, txtTaller, txtHorario;
+        CircleImageView ivPerfil;
+        TextView txtNombre, txtTaller, txtHorario, txtTema;
 
         public CardviewHolder(View itemView){
             super(itemView);
@@ -134,6 +137,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             txtNombre= itemView.findViewById(R.id.tv_Nombre_cardview);
             txtTaller= itemView.findViewById(R.id.tv_Taller_cardview);
             txtHorario= itemView.findViewById(R.id.tv_Hora_cardview);
+            txtTema= itemView.findViewById(R.id.tv_Tema_cardview);
         }
     }
 }

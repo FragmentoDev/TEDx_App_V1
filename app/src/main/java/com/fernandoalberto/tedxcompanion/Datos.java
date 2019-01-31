@@ -21,7 +21,7 @@ public class Datos extends AppCompatActivity {
 
     CircleImageView perfil;
     TextView Nombre, Taller, Descripcion;
-    ImageView logo, creditosizq, creditosder;
+    ImageView logo, creditos;
     static int drawableRes;
 
     @Override
@@ -33,14 +33,12 @@ public class Datos extends AppCompatActivity {
         supportPostponeEnterTransition();
 
         logo= findViewById(R.id.iv_datos_tedx);
-        creditosizq= findViewById(R.id.datos_creditos_izq);
-        creditosder= findViewById(R.id.datos_creditos_der);
+        creditos= findViewById(R.id.iv_am_creditos_datos);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
 
         logo.setAnimation(myanim);
-        creditosizq.setAnimation(myanim);
-        creditosder.setAnimation(myanim);
+        creditos.setAnimation(myanim);
 
         perfil= findViewById(R.id.perfil_iv);
         Nombre= findViewById(R.id.perfil_nombre);

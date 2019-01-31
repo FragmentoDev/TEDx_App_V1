@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class Horarios extends AppCompatActivity {
 
     LinearLayout linearLayout;
-    ImageView logo, creditosizq, creditosder;
+    ImageView logo, creditos;
     CardView cv_registro, cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo, cv_despedida;
     static String Titulo= "";
 
@@ -35,14 +35,12 @@ public class Horarios extends AppCompatActivity {
         setContentView(R.layout.activity_horarios);
         linearLayout= findViewById(R.id.llhorario);
         logo= findViewById(R.id.iv_horarios_tedx);
-        creditosizq= findViewById(R.id.horarios_creditos_izq);
-        creditosder= findViewById(R.id.horarios_creditos_der);
+        creditos= findViewById(R.id.iv_am_creditos_horarios);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
 
         logo.setAnimation(myanim);
-        creditosizq.setAnimation(myanim);
-        creditosder.setAnimation(myanim);
+        creditos.setAnimation(myanim);
 
         LayoutAnimationController layoutAnimationController= AnimationUtils.loadLayoutAnimation(getApplicationContext(), R.anim.layout_slide_from_bottom);
         linearLayout.setLayoutAnimation(layoutAnimationController);

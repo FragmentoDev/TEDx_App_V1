@@ -16,8 +16,8 @@ import java.util.ArrayList;
 
 public class Splash extends AppCompatActivity {
 
-    private final int Duracion= 3200;
-    ImageView logo, fragmento, creditosizq, creditosder;
+    private final int Duracion= 3000;
+    ImageView logo, fragmento, creditos;
     TextView texto, elaborado;
     ProgressBar progreso;
     static ArrayList<Conferencistas> listaConferencistas = new ArrayList<Conferencistas>();
@@ -35,8 +35,9 @@ public class Splash extends AppCompatActivity {
         progreso= findViewById(R.id.spalshProgressbar);
         elaborado= findViewById(R.id.splash_texto_elaborado);
         fragmento= findViewById(R.id.spashfragmento);
-        creditosizq= findViewById(R.id.splashcontactosizq);
-        creditosder= findViewById(R.id.splashcontactosder);
+        creditos= findViewById(R.id.splashcontactos);
+
+        creditos.setImageResource(R.drawable.creditos_negro);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
 
@@ -45,8 +46,7 @@ public class Splash extends AppCompatActivity {
         progreso.setAnimation(myanim);
         elaborado.setAnimation(myanim);
         fragmento.setAnimation(myanim);
-        creditosizq.setAnimation(myanim);
-        creditosder.setAnimation(myanim);
+        creditos.setAnimation(myanim);
 
         listaConferencistas.clear();
         listaConferencistas.add(new Conferencistas("Mirna Medina", "Activista Social", "Licenciada en Educación. Fundadora y directora del grupo “LasRastreadoras del Fuerte”. Taller de aplicación de ciencias forenses en la búsqueda de desaparecidos en Guatemala Defensora de los derechos humanos en México.","-" , "-"));
