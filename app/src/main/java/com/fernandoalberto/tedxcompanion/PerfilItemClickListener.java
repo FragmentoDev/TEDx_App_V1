@@ -1,6 +1,7 @@
 package com.fernandoalberto.tedxcompanion;
 
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -9,6 +10,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
  */
 
 public interface PerfilItemClickListener {
-    void onPerfilItemClick(int pos, Conferencistas conferencistas, ImageView shareImageView);
+    void onPerfilItemClick(ImageView foto, TextView nombre, TextView tema);
 }
 

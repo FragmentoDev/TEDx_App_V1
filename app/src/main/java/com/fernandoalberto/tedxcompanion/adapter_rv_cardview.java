@@ -1,10 +1,14 @@
 package com.fernandoalberto.tedxcompanion;
 
 import android.animation.ObjectAnimator;
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
+import android.os.Bundle;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -50,12 +54,15 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     @Override
     public void onBindViewHolder(@NonNull final CardviewHolder cardviewHolder, int i) {
         view= cardviewHolder.itemView;
-        //if (i >= lastPosition) {
-            Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.item_scroll);
-            view.startAnimation(animation);
-       // }
-        //lastPosition = i;
+        Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.item_scroll);
+        view.startAnimation(animation);
         final Conferencistas conferencista= conferencistas.get(i);
+
+        cardviewHolder.txtNombre.setText(conferencista.getNombre());
+        cardviewHolder.txtTaller.setText(conferencista.getTaller());
+        cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
+
+        cardviewHolder.txtTema.setText(Horarios.Titulo);
         switch (conferencista.getNombre()){
             case "Mirna Medina": cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina_circulo);
                 break;
@@ -93,23 +100,18 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
                 break;
         }
 
-                        cardviewHolder.txtNombre.setText(conferencista.getNombre());
-        cardviewHolder.txtTaller.setText(conferencista.getTaller());
-        cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
-        cardviewHolder.txtTema.setText(Horarios.Titulo);
-
-
-        ViewCompat.setTransitionName(cardviewHolder.ivPerfil, conferencista.getNombre());
+        ViewCompat.setTransitionName(cardviewHolder.ivPerfil, DetallesSector.EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
+        ViewCompat.setTransitionName(cardviewHolder.txtNombre, DetallesSector.EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
+        ViewCompat.setTransitionName(cardviewHolder.txtTaller, DetallesSector.EXTRA_PERFIL_TALLER_TRANSITION_NAME);
 
         cardviewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DetallesSector.Nombre= conferencista.getNombre();
                 DetallesSector.indice= cardviewHolder.getAdapterPosition();
-                onPerfilItemClick.onPerfilItemClick(cardviewHolder.getAdapterPosition(), conferencista, cardviewHolder.ivPerfil);
+                onPerfilItemClick.onPerfilItemClick(cardviewHolder.ivPerfil, cardviewHolder.txtNombre, cardviewHolder.txtTaller);
             }
         });
-
 
     }
 

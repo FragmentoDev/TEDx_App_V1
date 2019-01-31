@@ -37,8 +37,6 @@ public class Splash extends AppCompatActivity {
         fragmento= findViewById(R.id.spashfragmento);
         creditos= findViewById(R.id.splashcontactos);
 
-        creditos.setImageResource(R.drawable.creditos_negro);
-
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
 
         logo.setAnimation(myanim);

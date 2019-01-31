@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -13,12 +14,13 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Pair;
+import android.support.v4.util.Pair;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +35,8 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
     static int indice;
     static String Nombre;
     public static final String EXTRA_PERFIL_IMAGE_TRANSITION_NAME = "perfil_image_transition_name";
+    public static final String EXTRA_PERFIL_NOMBRE_TRANSITION_NAME = "perfil_nombre_transition_name";
+    public static final String EXTRA_PERFIL_TALLER_TRANSITION_NAME = "perfil_taller_transition_name";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,13 +65,23 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
     }
 
     @Override
-    public void onPerfilItemClick(int pos, Conferencistas conferencistas, ImageView sharedImageView) {
-        Intent intent = new Intent(this, Datos.class);
-        intent.putExtra(EXTRA_PERFIL_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(sharedImageView));
+    public void onPerfilItemClick(ImageView foto, TextView nombre, TextView taller) {
+        /*Intent intent = new Intent(this, Datos.class);
+        intent.putExtra(EXTRA_PERFIL_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(nombre));
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 this,
                 sharedImageView,
                 ViewCompat.getTransitionName(sharedImageView));
+        startActivity(intent, options.toBundle());*/
+        Intent intent = new Intent(this, Datos.class);
+        intent.putExtra(EXTRA_PERFIL_IMAGE_TRANSITION_NAME,  ViewCompat.getTransitionName(foto));
+        intent.putExtra(EXTRA_PERFIL_NOMBRE_TRANSITION_NAME,  ViewCompat.getTransitionName(nombre));
+        intent.putExtra(EXTRA_PERFIL_TALLER_TRANSITION_NAME,  ViewCompat.getTransitionName(taller));
+        Pair<View, String> p1 = Pair.create((View)foto, EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
+        Pair<View, String> p2 = Pair.create((View)nombre, EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
+        Pair<View, String> p3 = Pair.create((View)taller, EXTRA_PERFIL_TALLER_TRANSITION_NAME);
+        ActivityOptionsCompat options = ActivityOptionsCompat.
+                makeSceneTransitionAnimation(DetallesSector.this, p1, p2, p3);
         startActivity(intent, options.toBundle());
     }
 }

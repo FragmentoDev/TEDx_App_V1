@@ -23,7 +23,6 @@
 
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:padding="10dp"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/perfil_iv"
             android:layout_width="230dp"
@@ -41,9 +40,9 @@
             android:text="Nombre"
             android:textStyle="bold"
             android:textColor="#BB0707"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:gravity="center_vertical"
@@ -51,18 +50,13 @@
             android:text="Taller"
             android:textColor="#000"
             android:textStyle="bold"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:textSize="20sp" />
 
         <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="#fff"
             android:elevation="8dp"
             android:divider="@android:color/transparent"
@@ -88,9 +82,9 @@
                 android:text="Descripcion"
                 android:textStyle="bold"
                 android:textColor="#000"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
                 android:padding="10dp"
                 android:layout_weight="4.5"/>
 
@@ -103,21 +97,19 @@
 
         </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/iv_am_creditos_datos"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/iv_am_creditos_datos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitEnd"
-                android:src="@drawable/creditos" />
-
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:scaleType="fitEnd"
+            android:src="@drawable/creditos" />
 
     </LinearLayout>
 

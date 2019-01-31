@@ -46,8 +46,8 @@ public class Datos extends AppCompatActivity {
         Descripcion= findViewById(R.id.perfil_descripcion);
 
         Descripcion.setAnimation(myanim);
-        Nombre.setAnimation(myanim);
-        Taller.setAnimation(myanim);
+       /* Nombre.setAnimation(myanim);
+        Taller.setAnimation(myanim);*/
 
         Bundle extras = getIntent().getExtras();
         switch (Splash.listaClick.get(DetallesSector.indice).getNombre()){
@@ -87,14 +87,11 @@ public class Datos extends AppCompatActivity {
                 break;
         }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            String imageTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
-            perfil.setTransitionName(imageTransitionName);
-        }
+        Nombre.setText(Splash.listaClick.get(DetallesSector.indice).getNombre());
+        Taller.setText(Splash.listaClick.get(DetallesSector.indice).getTaller());
+        Descripcion.setText(Splash.listaClick.get(DetallesSector.indice).getDescipcion());
 
-        Picasso.get()
-                .load(drawableRes)
-                .into(perfil, new Callback() {
+        Picasso.get().load(drawableRes).into(perfil, new Callback() {
                     @Override
                     public void onSuccess() {
                         supportStartPostponedEnterTransition();
@@ -106,11 +103,13 @@ public class Datos extends AppCompatActivity {
                     }
                 });
 
-
-        Nombre.setText(Splash.listaClick.get(DetallesSector.indice).getNombre());
-        Taller.setText(Splash.listaClick.get(DetallesSector.indice).getTaller());
-        Descripcion.setText(Splash.listaClick.get(DetallesSector.indice).getDescipcion());
-
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            String imageTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
+            perfil.setTransitionName(imageTransitionName);
+            String nombreTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
+            Nombre.setTransitionName(nombreTransitionName);
+            String tallerTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_TALLER_TRANSITION_NAME);
+            Taller.setTransitionName(tallerTransitionName);
+        }
     }
 }
