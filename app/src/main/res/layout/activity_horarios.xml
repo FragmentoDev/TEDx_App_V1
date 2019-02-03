@@ -18,9 +18,9 @@
 
         <ImageView
             android:id="@+id/iv_horarios_tedx"
-            android:layout_width="155dp"
+            android:layout_width="130dp"
             android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_weight="0.7"
             android:scaleType="fitCenter"
             android:src="@drawable/logo_tedex" />
 
@@ -28,7 +28,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="8"
+            android:layout_weight="7.8"
             android:orientation="vertical">
 
 
@@ -41,7 +41,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#6F0000"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -49,60 +49,33 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp"
                 android:id="@+id/h_cv_Registro">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Registro y Acceso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Registro y Acceso: "
                         android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="9:00 AM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="10:00 AM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="9:00 a 10:00 AM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -120,55 +93,43 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginHorizontal="30dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Mira hacia el futuro"
-                        android:textColor="#DF3E3E"
-                        android:textAlignment="center"
+                        android:text="Tema: Mira hacia el futuro"
                         android:textStyle="bold"
-                        android:textSize="25sp" />
+                        android:textColor="@color/Pomergranate"
+                        android:textSize="18sp" />
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="3"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="10:00 AM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-
                         <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:scaleType="fitCenter"
+                            android:layout_marginRight="5dp"
                             android:src="@drawable/ic_time_black"/>
 
                         <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="11:00 AM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hora: 10:00 a 11:00"
+                            android:textColor="#000"
+                            android:textSize="18sp"
                             android:textAlignment="center"/>
 
                     </LinearLayout>
@@ -176,16 +137,17 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="#DF3E3E"
+                        android:textColor="@color/Pomergranate"
                         android:text="Oradores"
-                        android:textAlignment="center"
-                        android:textSize="20sp"/>
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="2"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginVertical="20dp"
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -193,18 +155,14 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/alejandro_felix_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/alejandro_felix_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/ana_retamoza_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/ana_retamoza_circulo" />
 
                     </LinearLayout>
 
@@ -215,7 +173,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#2B2B2B"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -223,59 +181,32 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Primer Break"
-                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Primer Brak: "
                         android:textStyle="bold"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="11:00 AM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="11:20 AM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="11:00 a 11:20 AM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -292,7 +223,6 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
                 android:id="@+id/h_cv_Personalidad"
                 card_view:cardCornerRadius="15dp">
@@ -365,27 +295,21 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/dylan_kenjiro_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/dylan_kenjiro_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/tim_urba_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/tim_urba_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/alejandro_felix_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/alejandro_felix_circulo" />
 
                     </LinearLayout>
 
@@ -396,7 +320,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#2B2B2B"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -404,58 +328,32 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Segundo Brak: "
                         android:textStyle="bold"
-                        android:text="Segundo Break"
-                        android:textAlignment="center"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="12:20 PM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="12:40 PM"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12:20 a 12:40 PM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -472,7 +370,6 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
                 android:id="@+id/h_cv_Radical"
                 card_view:cardCornerRadius="15dp">
@@ -546,27 +443,21 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/gerardo_lopez_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/gerardo_lopez_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/hector_serrano_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/hector_serrano_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/jorge_ramos_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/jorge_ramos_circulo" />
 
                     </LinearLayout>
 
@@ -577,7 +468,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#2B2B2B"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -585,58 +476,32 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Tercer Break"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tercer Brak: "
                         android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="1:40 PM"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="2:00 PM"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="1:40 a 2:00 PM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -653,7 +518,6 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
                 android:id="@+id/h_cv_Prospectiva"
                 card_view:cardCornerRadius="15dp">
@@ -725,27 +589,21 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/ayesha_peraza_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/ayesha_peraza_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/gilberto_castro_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/gilberto_castro_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/maria_stone_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/maria_stone_circulo" />
 
                     </LinearLayout>
 
@@ -756,7 +614,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#947D3A"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -764,58 +622,32 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Comida"
-                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Comida: "
                         android:textStyle="bold"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="3:00 PM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="4:30 PM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="3:00 a 4:30 PM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -832,7 +664,6 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
                 android:id="@+id/h_cv_Pasion_hacer"
                 card_view:cardCornerRadius="15dp">
@@ -904,27 +735,21 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/jorge_drexler_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/jorge_drexler_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/krishna_ramirez_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/krishna_ramirez_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/neimann_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/neimann_circulo" />
 
                     </LinearLayout>
 
@@ -935,7 +760,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#2B2B2B"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -943,58 +768,32 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Cuarto Break"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Cuarto Brak: "
                         android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="5:30 PM"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:text="5:50 PM"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="5:30 a 5:50 AM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -1011,7 +810,6 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
                 android:layout_marginVertical="15dp"
                 android:id="@+id/h_cv_Detras_miedo"
                 card_view:cardCornerRadius="15dp">
@@ -1083,27 +881,21 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/mariela_guadalupe_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/mariela_guadalupe_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/mirna_medina_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/mirna_medina_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/miguel_renteria_circulo"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="#FF000000"/>
+                            android:src="@drawable/miguel_renteria_circulo" />
 
                     </LinearLayout>
 
@@ -1114,7 +906,7 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#440404"
+                android:backgroundTint="#000"
                 android:elevation="8dp"
                 android:divider="@android:color/transparent"
                 android:dividerHeight="0.0px"
@@ -1122,59 +914,32 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="15dp"
-                android:id="@+id/h_cv_Despedida"
-                card_view:cardCornerRadius="15dp">
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:gravity="center"
+                    android:layout_marginHorizontal="30dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:textColor="#fff"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Despedida Final"
-                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Despedida Final: "
                         android:textStyle="bold"
-                        android:textSize="25sp" />
+                        android:textAlignment="textEnd"
+                        android:textSize="16sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="6:50 PM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/ic_time_white"/>
-
-                        <TextView
-                            android:textColor="#fff"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:text="7:00 PM"
-                            android:textStyle="bold"
-                            android:textSize="20sp"
-                            android:textAlignment="center"/>
-
-                    </LinearLayout>
+                    <TextView
+                        android:textColor="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="6:50 a 7:00 AM"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 

@@ -24,7 +24,7 @@ public class Horarios extends AppCompatActivity {
 
     LinearLayout linearLayout;
     ImageView logo, creditos;
-    CardView cv_registro, cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo, cv_despedida;
+    CardView cv_registro, cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo;
     static String Titulo= "";
 
     @Override
@@ -53,7 +53,6 @@ public class Horarios extends AppCompatActivity {
         cv_prospectiva=findViewById(R.id.h_cv_Prospectiva);
         cv_pasion_haver= findViewById(R.id.h_cv_Pasion_hacer);
         cv_detras_miedo=findViewById(R.id.h_cv_Detras_miedo);
-        cv_despedida=findViewById(R.id.h_cv_Despedida);
 
         cv_registro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -136,13 +135,6 @@ public class Horarios extends AppCompatActivity {
                 Titulo= "Detrás del miedo";
                 Intent intent= new Intent(Horarios.this, DetallesSector.class);
                 startActivity(intent);
-            }
-        });
-
-        cv_despedida.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Titulo= "Despedida Final";
             }
         });
     }

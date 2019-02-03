@@ -36,9 +36,7 @@
                     android:layout_height="60dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_perfil"
-                    app:civ_border_width="2dp"
-                    android:layout_margin="15dp"
-                    app:civ_border_color="#FF000000"/>
+                    android:layout_margin="15dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -53,8 +51,8 @@
                         android:text="Nombre"
                         android:gravity="bottom"
                         android:textStyle="bold"
-                        android:textColor="#000000"
-                        android:textSize="25sp"/>
+                        android:textColor="@color/Pomergranate"
+                        android:textSize="20sp"/>
 
                     <TextView
                         android:id="@+id/tv_Taller_cardview"
@@ -63,7 +61,7 @@
                         android:text="Taller"
                         android:textColor="#858585"
                         android:layout_gravity="center"
-                        android:textSize="20sp"/>
+                        android:textSize="15sp"/>
 
                 </LinearLayout>
 
@@ -87,7 +85,7 @@
                 android:text="Tema"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="#BB0707"
+                android:textColor="@color/Pomergranate"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"/>
 
@@ -95,7 +93,6 @@
                 android:id="@+id/cv_btn_visualizar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="7dp"
                 android:text="Visualizar"
                 android:textAllCaps="false"
                 android:textSize="17sp"

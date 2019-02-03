@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,9 +61,9 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
 
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
-        cardviewHolder.txtHorario.setText(conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
+        cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
 
-        cardviewHolder.txtTema.setText(Horarios.Titulo);
+        cardviewHolder.txtTema.setText("Tema: " + Horarios.Titulo);
         switch (conferencista.getNombre()){
             case "Mirna Medina": cardviewHolder.ivPerfil.setImageResource(R.drawable.mirna_medina_circulo);
                 break;
@@ -104,7 +105,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         ViewCompat.setTransitionName(cardviewHolder.txtNombre, DetallesSector.EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
         ViewCompat.setTransitionName(cardviewHolder.txtTaller, DetallesSector.EXTRA_PERFIL_TALLER_TRANSITION_NAME);
 
-        cardviewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+        cardviewHolder.btnVisualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DetallesSector.Nombre= conferencista.getNombre();
@@ -112,7 +113,6 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
                 onPerfilItemClick.onPerfilItemClick(cardviewHolder.ivPerfil, cardviewHolder.txtNombre, cardviewHolder.txtTaller);
             }
         });
-
     }
 
     @Override
@@ -134,6 +134,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     public static class CardviewHolder extends RecyclerView.ViewHolder{
         ImageView ivPerfil;
         TextView txtNombre, txtTaller, txtHorario, txtTema;
+        Button btnVisualizar;
 
         public CardviewHolder(View itemView){
             super(itemView);
@@ -142,6 +143,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             txtTaller= itemView.findViewById(R.id.tv_Taller_cardview);
             txtHorario= itemView.findViewById(R.id.tv_Hora_cardview);
             txtTema= itemView.findViewById(R.id.tv_Tema_cardview);
+            btnVisualizar= itemView.findViewById(R.id.cv_btn_visualizar);
         }
     }
 }

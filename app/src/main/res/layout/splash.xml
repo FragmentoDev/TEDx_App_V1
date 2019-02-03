@@ -19,7 +19,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/logo_tedex"
-            android:padding="45dp"
+            android:padding="30dp"
             android:scaleType="fitCenter"/>
 
         <TextView
@@ -73,7 +73,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.5"
             android:scaleType="fitCenter"
-            android:padding="26dp"
+            android:padding="20dp"
             android:src="@drawable/creditos_negro" />
 
     </LinearLayout>

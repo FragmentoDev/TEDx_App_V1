@@ -67,7 +67,7 @@
         <ImageView
             android:id="@+id/iv_am_tedx"
             android:layout_width="match_parent"
-            android:layout_height="28dp"
+            android:layout_height="25dp"
             android:paddingHorizontal="20dp"
             android:src="@drawable/logo_tedex"
             android:scaleType="fitStart" />
