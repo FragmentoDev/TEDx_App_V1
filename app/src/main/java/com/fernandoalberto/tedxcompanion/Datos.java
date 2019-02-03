@@ -13,6 +13,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideBuilder;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -37,10 +39,10 @@ public class Datos extends AppCompatActivity {
             Fade fade = new Fade();
             fade.excludeTarget(android.R.id.statusBarBackground, true);
             fade.excludeTarget(android.R.id.navigationBarBackground, true);
-
             getWindow().setEnterTransition(fade);
             getWindow().setExitTransition(fade);
         }
+
 
         logo= findViewById(R.id.iv_datos_tedx);
         creditos= findViewById(R.id.iv_am_creditos_datos);

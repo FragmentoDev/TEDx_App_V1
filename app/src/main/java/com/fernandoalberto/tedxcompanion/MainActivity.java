@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView  tedx, creditos;
     Button Horarios, WEB;
+    CardView cv_Horario, cv_Web;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +30,16 @@ public class MainActivity extends AppCompatActivity {
         WEB = findViewById(R.id.btn_WEB);
         tedx= findViewById(R.id.iv_am_tedx);
         creditos= findViewById(R.id.iv_am_creditos);
+        cv_Horario= findViewById(R.id.cv_btn_horarios);
+        cv_Web= findViewById(R.id.cv_btn_web);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
         Animation scroll = AnimationUtils.loadAnimation(this,R.anim.item_slide_left);
 
         tedx.setAnimation(myanim);
         creditos.setAnimation(myanim);
-
+        cv_Horario.setAnimation(myanim);
+        cv_Web.setAnimation(myanim);
         Horarios.setAnimation(scroll);
         WEB.setAnimation(scroll);
 

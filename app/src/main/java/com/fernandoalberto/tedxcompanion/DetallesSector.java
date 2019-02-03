@@ -50,9 +50,8 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
             Fade fade = new Fade();
             fade.excludeTarget(android.R.id.statusBarBackground, true);
             fade.excludeTarget(android.R.id.navigationBarBackground, true);
-
             getWindow().setEnterTransition(fade);
-            getWindow().setExitTransition(fade);
+            getWindow().setExitTransition(null);
         }
 
         rv= findViewById(R.id.ds_rv_personas);
