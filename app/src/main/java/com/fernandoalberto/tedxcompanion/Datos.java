@@ -23,9 +23,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class Datos extends AppCompatActivity {
 
     CircleImageView perfil;
-    TextView Nombre, Taller, Descripcion;
-    ImageView logo, creditos;
+    TextView Nombre, Taller, Descripcion, grabacion;
+    ImageView logo, creditos, ic_grabacion;
     static int drawableRes;
+    static int drawableResGrabado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +44,13 @@ public class Datos extends AppCompatActivity {
             getWindow().setExitTransition(fade);
         }
 
-
+        grabacion= findViewById(R.id.perfil_grabado);
+        ic_grabacion= findViewById(R.id.d_grabacion);
         logo= findViewById(R.id.iv_datos_tedx);
         creditos= findViewById(R.id.iv_am_creditos_datos);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
+        Animation left = AnimationUtils.loadAnimation(this,R.anim.item_slide_left);
 
         logo.setAnimation(myanim);
         creditos.setAnimation(myanim);
@@ -90,18 +93,31 @@ public class Datos extends AppCompatActivity {
             case "Dylan Kenjiro": drawableRes=(R.drawable.dylan_kenjiro_circulo);
                 break;
             case "Tim Urban": drawableRes=(R.drawable.tim_urba_circulo);
+                ic_grabacion.setImageResource(R.drawable.ic_grabacion);
+            grabacion.setText("Grabación");
+            grabacion.setAnimation(left);
                 break;
             case "Jorge Ramos": drawableRes=(R.drawable.jorge_ramos_circulo);
+                ic_grabacion.setImageResource(R.drawable.ic_grabacion);
+                grabacion.setText("Grabación");
+                grabacion.setAnimation(left);
                 break;
             case "Jorge Drexler": drawableRes=(R.drawable.jorge_drexler_circulo);
+                ic_grabacion.setImageResource(R.drawable.ic_grabacion);
+                grabacion.setText("Grabación");
+                grabacion.setAnimation(left);
                 break;
             case "Christoph Niemann": drawableRes=(R.drawable.neimann_circulo);
+                ic_grabacion.setImageResource(R.drawable.ic_grabacion);
+                grabacion.setText("Grabación");
+                grabacion.setAnimation(left);
                 break;
         }
 
         Nombre.setText(Splash.listaClick.get(DetallesSector.indice).getNombre());
         Taller.setText(Splash.listaClick.get(DetallesSector.indice).getTaller());
         Descripcion.setText(Splash.listaClick.get(DetallesSector.indice).getDescipcion());
+
 
         Picasso.get().load(drawableRes).into(perfil, new Callback() {
                     @Override
@@ -114,7 +130,6 @@ public class Datos extends AppCompatActivity {
                         supportFinishAfterTransition();
                     }
                 });
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             String imageTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
             perfil.setTransitionName(imageTransitionName);
@@ -122,6 +137,8 @@ public class Datos extends AppCompatActivity {
             Nombre.setTransitionName(nombreTransitionName);
             String tallerTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_TALLER_TRANSITION_NAME);
             Taller.setTransitionName(tallerTransitionName);
+            String grabacionTransitionName = extras.getString(DetallesSector.EXTRA_PERFIL_GRABACION_TRANSITION_NAME);
+            ic_grabacion.setTransitionName(grabacionTransitionName);
         }
     }
 }

@@ -109,13 +109,14 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         ViewCompat.setTransitionName(cardviewHolder.ivPerfil, DetallesSector.EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
         ViewCompat.setTransitionName(cardviewHolder.txtNombre, DetallesSector.EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
         ViewCompat.setTransitionName(cardviewHolder.txtTaller, DetallesSector.EXTRA_PERFIL_TALLER_TRANSITION_NAME);
+        ViewCompat.setTransitionName(cardviewHolder.ivGrabado, DetallesSector.EXTRA_PERFIL_GRABACION_TRANSITION_NAME);
 
         cardviewHolder.btnVisualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 DetallesSector.Nombre= conferencista.getNombre();
                 DetallesSector.indice= cardviewHolder.getAdapterPosition();
-                onPerfilItemClick.onPerfilItemClick(cardviewHolder.ivPerfil, cardviewHolder.txtNombre, cardviewHolder.txtTaller);
+                onPerfilItemClick.onPerfilItemClick(cardviewHolder.ivPerfil, cardviewHolder.txtNombre, cardviewHolder.txtTaller, cardviewHolder.ivGrabado);
             }
         });
     }

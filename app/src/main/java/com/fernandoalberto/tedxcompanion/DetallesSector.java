@@ -38,6 +38,7 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
     public static final String EXTRA_PERFIL_IMAGE_TRANSITION_NAME = "perfil_image_transition_name";
     public static final String EXTRA_PERFIL_NOMBRE_TRANSITION_NAME = "perfil_nombre_transition_name";
     public static final String EXTRA_PERFIL_TALLER_TRANSITION_NAME = "perfil_taller_transition_name";
+    public static final String EXTRA_PERFIL_GRABACION_TRANSITION_NAME = "perfil_grabacion_transition_name";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,23 +75,18 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
     }
 
     @Override
-    public void onPerfilItemClick(ImageView foto, TextView nombre, TextView taller) {
-        /*Intent intent = new Intent(this, Datos.class);
-        intent.putExtra(EXTRA_PERFIL_IMAGE_TRANSITION_NAME, ViewCompat.getTransitionName(nombre));
-        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                this,
-                sharedImageView,
-                ViewCompat.getTransitionName(sharedImageView));
-        startActivity(intent, options.toBundle());*/
+    public void onPerfilItemClick(ImageView foto, TextView nombre, TextView taller, ImageView grabacion) {
         Intent intent = new Intent(this, Datos.class);
         intent.putExtra(EXTRA_PERFIL_IMAGE_TRANSITION_NAME,  ViewCompat.getTransitionName(foto));
         intent.putExtra(EXTRA_PERFIL_NOMBRE_TRANSITION_NAME,  ViewCompat.getTransitionName(nombre));
         intent.putExtra(EXTRA_PERFIL_TALLER_TRANSITION_NAME,  ViewCompat.getTransitionName(taller));
+        intent.putExtra(EXTRA_PERFIL_GRABACION_TRANSITION_NAME,  ViewCompat.getTransitionName(grabacion));
         Pair<View, String> p1 = Pair.create((View)foto, EXTRA_PERFIL_IMAGE_TRANSITION_NAME);
         Pair<View, String> p2 = Pair.create((View)nombre, EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
         Pair<View, String> p3 = Pair.create((View)taller, EXTRA_PERFIL_TALLER_TRANSITION_NAME);
+        Pair<View, String> p4 = Pair.create((View)grabacion, EXTRA_PERFIL_GRABACION_TRANSITION_NAME);
         ActivityOptionsCompat options = ActivityOptionsCompat.
-                makeSceneTransitionAnimation(DetallesSector.this, p1, p2, p3);
+                makeSceneTransitionAnimation(DetallesSector.this, p1, p2, p3, p4);
         startActivity(intent, options.toBundle());
     }
 }

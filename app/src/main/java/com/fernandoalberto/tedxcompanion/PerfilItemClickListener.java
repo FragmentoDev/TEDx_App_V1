@@ -10,6 +10,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
  */
 
 public interface PerfilItemClickListener {
-    void onPerfilItemClick(ImageView foto, TextView nombre, TextView tema);
+    void onPerfilItemClick(ImageView foto, TextView nombre, TextView tema, ImageView grabacion);
 }
 
