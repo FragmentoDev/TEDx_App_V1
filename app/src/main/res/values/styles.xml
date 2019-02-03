@@ -20,4 +20,10 @@
         <item name="colorControlHighlight">@color/Pomergranate</item>
     </style>
 
+    <style name="BotonCard" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorControlHighlight">@color/Visualizar</item>
+        <item name="colorAccent">@color/Button</item>
+    </style>
+
 </resources>
