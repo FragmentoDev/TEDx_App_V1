@@ -272,12 +272,12 @@
                         android:textStyle="bold"
                         android:textSize="18sp"/>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:layout_marginVertical="20dp"
-                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -301,6 +301,14 @@
                             android:src="@drawable/alejandro_felix_circulo" />
 
                     </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_grabacion"
+                        android:layout_marginBottom="5dp" />
+
 
                 </LinearLayout>
 
@@ -409,7 +417,6 @@
                     android:textSize="18sp"/>
 
                     <LinearLayout
-                        android:layout_margin="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -437,6 +444,31 @@
                             android:src="@drawable/jorge_ramos_circulo" />
 
                     </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_grabacion"
+                        android:layout_marginBottom="5dp" />
+
+                </LinearLayout>
 
                 </LinearLayout>
 
@@ -681,7 +713,6 @@
                     android:textSize="18sp"/>
 
                 <LinearLayout
-                    android:layout_marginVertical="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="3"
@@ -707,6 +738,32 @@
                             android:layout_height="80dp"
                             android:layout_weight="1"
                             android:src="@drawable/neimann_circulo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_grabacion" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_grabacion" />
 
                     </LinearLayout>
 

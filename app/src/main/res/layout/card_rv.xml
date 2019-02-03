@@ -63,6 +63,12 @@
                         android:layout_gravity="center"
                         android:textSize="15sp"/>
 
+                    <ImageView
+                        android:id="@+id/iv_grabado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp" />
+
                 </LinearLayout>
 
             </LinearLayout>

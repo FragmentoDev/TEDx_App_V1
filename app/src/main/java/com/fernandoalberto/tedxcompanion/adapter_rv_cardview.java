@@ -59,6 +59,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         view.startAnimation(animation);
         final Conferencistas conferencista= conferencistas.get(i);
 
+
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
@@ -92,12 +93,16 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             case "Dylan Kenjiro": cardviewHolder.ivPerfil.setImageResource(R.drawable.dylan_kenjiro_circulo);
                 break;
             case "Tim Urban" : cardviewHolder.ivPerfil.setImageResource(R.drawable.tim_urba_circulo);
+                cardviewHolder.ivGrabado.setImageResource(R.drawable.ic_grabacion);
                 break;
             case "Jorge Ramos" : cardviewHolder.ivPerfil.setImageResource(R.drawable.jorge_ramos_circulo);
+                cardviewHolder.ivGrabado.setImageResource(R.drawable.ic_grabacion);
                 break;
             case "Christoph Niemann" : cardviewHolder.ivPerfil.setImageResource(R.drawable.neimann_circulo);
+                cardviewHolder.ivGrabado.setImageResource(R.drawable.ic_grabacion);
                 break;
             case "Jorge Drexler" : cardviewHolder.ivPerfil.setImageResource(R.drawable.jorge_drexler_circulo);
+                cardviewHolder.ivGrabado.setImageResource(R.drawable.ic_grabacion);
                 break;
         }
 
@@ -132,7 +137,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
     }
 
     public static class CardviewHolder extends RecyclerView.ViewHolder{
-        ImageView ivPerfil;
+        ImageView ivPerfil, ivGrabado;
         TextView txtNombre, txtTaller, txtHorario, txtTema;
         Button btnVisualizar;
 
@@ -144,6 +149,7 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
             txtHorario= itemView.findViewById(R.id.tv_Hora_cardview);
             txtTema= itemView.findViewById(R.id.tv_Tema_cardview);
             btnVisualizar= itemView.findViewById(R.id.cv_btn_visualizar);
+            ivGrabado= itemView.findViewById(R.id.iv_grabado);
         }
     }
 }
