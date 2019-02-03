@@ -51,6 +51,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/h_cv_Registro">
 
                 <LinearLayout
@@ -94,6 +95,7 @@
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
 
 
@@ -182,6 +184,7 @@
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
@@ -224,6 +227,7 @@
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/h_cv_Personalidad"
                 card_view:cardCornerRadius="15dp">
 
@@ -325,6 +329,7 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp">
 
@@ -368,6 +373,7 @@
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:id="@+id/h_cv_Radical"
                 card_view:cardCornerRadius="15dp">
 
@@ -485,6 +491,7 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp">
 
@@ -527,6 +534,7 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 android:id="@+id/h_cv_Prospectiva"
                 card_view:cardCornerRadius="15dp">
@@ -622,6 +630,7 @@
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
@@ -665,6 +674,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 android:id="@+id/h_cv_Pasion_hacer"
+                android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -783,6 +793,7 @@
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
 
                 <LinearLayout
@@ -826,6 +837,7 @@
                 card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 android:id="@+id/h_cv_Detras_miedo"
+                android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="15dp">
 
                 <LinearLayout
@@ -918,6 +930,7 @@
                 android:clipChildren="false"
                 card_view:cardElevation="10dp"
                 card_view:cardPreventCornerOverlap="false"
+                android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp">
 
