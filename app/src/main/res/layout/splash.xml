@@ -19,16 +19,16 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/logo_tedex"
-            android:padding="35dp"
+            android:padding="37dp"
             android:scaleType="fitCenter"/>
 
         <TextView
             android:id="@+id/splash_texto"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.3"
+            android:layout_weight="0.4"
             android:text="Tedx Companion"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
             android:background="#000"
@@ -39,7 +39,7 @@
             android:id="@+id/spalshProgressbar"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="2.1"
             android:padding="60dp"
             android:indeterminateDrawable="@drawable/progressbar"
             style="?android:attr/progressBarStyle"/>
@@ -60,9 +60,9 @@
                 android:id="@+id/spashfragmento"
                 android:layout_width="200dp"
                 android:layout_height="0dp"
-                android:layout_weight="0.9"
+                android:layout_weight="0.7"
                 android:src="@drawable/logo_fragmento_developing_ideas"
-                android:paddingBottom="70dp"
+                android:paddingBottom="40dp"
                 android:layout_gravity="center"/>
 
 
