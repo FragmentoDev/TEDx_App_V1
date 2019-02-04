@@ -19,7 +19,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:src="@drawable/logo_tedex"
-            android:padding="30dp"
+            android:padding="35dp"
             android:scaleType="fitCenter"/>
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.3"
             android:text="Tedx Companion"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"
             android:background="#000"
@@ -53,8 +53,7 @@
             android:textAlignment="center"
             android:gravity="center"
             android:textColor="#000"
-            android:fontFamily="@font/lobster"
-            android:textSize="20sp"/>
+            android:textSize="10sp"/>
 
 
             <ImageView

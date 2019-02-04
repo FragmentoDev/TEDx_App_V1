@@ -198,7 +198,7 @@
                         android:textColor="#fff"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Primer Brak: "
+                        android:text="Primer Break: "
                         android:textStyle="bold"
                         android:textAlignment="textEnd"
                         android:textSize="16sp" />
@@ -344,7 +344,7 @@
                         android:textColor="#fff"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Segundo Brak: "
+                        android:text="Segundo Break: "
                         android:textStyle="bold"
                         android:textAlignment="textEnd"
                         android:textSize="16sp" />
@@ -506,7 +506,7 @@
                         android:textColor="#fff"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Tercer Brak: "
+                        android:text="Tercer Break: "
                         android:textStyle="bold"
                         android:textAlignment="textEnd"
                         android:textSize="16sp" />
@@ -807,7 +807,7 @@
                         android:textColor="#fff"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Cuarto Brak: "
+                        android:text="Cuarto Break: "
                         android:textStyle="bold"
                         android:textAlignment="textEnd"
                         android:textSize="16sp" />

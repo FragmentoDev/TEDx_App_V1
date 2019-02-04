@@ -50,7 +50,7 @@ public class Datos extends AppCompatActivity {
         creditos= findViewById(R.id.iv_am_creditos_datos);
 
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
-        Animation left = AnimationUtils.loadAnimation(this,R.anim.item_slide_left);
+        Animation left = AnimationUtils.loadAnimation(this,R.anim.item_slide_left_datos);
 
         logo.setAnimation(myanim);
         creditos.setAnimation(myanim);
