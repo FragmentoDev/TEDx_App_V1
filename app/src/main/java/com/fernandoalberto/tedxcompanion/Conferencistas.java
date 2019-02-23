@@ -7,6 +7,8 @@ public class Conferencistas {
     private String Hora_Inicio;
     private String Hora_Final;
 
+
+
     public Conferencistas() {
     }
 

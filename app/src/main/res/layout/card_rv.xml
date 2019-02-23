@@ -112,7 +112,7 @@
                 android:id="@+id/cv_btn_visualizar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Visualizar"
+                android:text="Visualisar"
                 android:textAllCaps="false"
                 android:textSize="20sp"
                 android:textColor="@color/Alizarin"

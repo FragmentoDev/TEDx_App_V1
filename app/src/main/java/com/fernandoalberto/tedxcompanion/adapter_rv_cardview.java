@@ -59,7 +59,6 @@ public class adapter_rv_cardview extends RecyclerView.Adapter<adapter_rv_cardvie
         view.startAnimation(animation);
         final Conferencistas conferencista= conferencistas.get(i);
 
-
         cardviewHolder.txtNombre.setText(conferencista.getNombre());
         cardviewHolder.txtTaller.setText(conferencista.getTaller());
         cardviewHolder.txtHorario.setText("Horario: " + conferencista.getHora_Inicio() + "  -  " + conferencista.getHora_Final());
