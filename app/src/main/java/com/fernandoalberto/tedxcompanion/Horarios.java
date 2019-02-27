@@ -65,7 +65,7 @@ public class Horarios extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
-                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(1).getNombre(), Splash.listaConferencistas.get(1).getTaller(), Splash.listaConferencistas.get(1).getDescipcion(), "10:00 AM", "10:30 AM"));
+                Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(6).getNombre(), Splash.listaConferencistas.get(6).getTaller(), Splash.listaConferencistas.get(6).getDescipcion(), "10:00 AM", "10:30 AM"));
                 Splash.listaClick.add(new Conferencistas(Splash.listaConferencistas.get(3).getNombre(), Splash.listaConferencistas.get(3).getTaller(), Splash.listaConferencistas.get(3).getDescipcion(), "10:30 AM", "11:00 AM"));
                 Titulo= "Mira hacia el futuro";
                 Intent intent= new Intent(Horarios.this, DetallesSector.class);

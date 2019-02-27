@@ -157,7 +157,7 @@
                             android:layout_width="0dp"
                             android:layout_height="80dp"
                             android:layout_weight="1"
-                            android:src="@drawable/alejandro_felix_circulo" />
+                            android:src="@drawable/luis_escobedo_circulo" />
 
                         <de.hdodenhof.circleimageview.CircleImageView
                             xmlns:app="http://schemas.android.com/apk/res-auto"
