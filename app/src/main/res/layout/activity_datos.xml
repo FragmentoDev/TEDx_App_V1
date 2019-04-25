@@ -75,12 +75,14 @@
         <android.support.v7.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#DADADA"
+            card_view:cardCornerRadius="15dp"
+            card_view:contentPadding="2dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:backgroundTint="#fff"
-            android:elevation="8dp"
-            android:divider="@android:color/transparent"
-            android:dividerHeight="0.0px"
-            card_view:cardElevation="10dp"
-            card_view:cardPreventCornerOverlap="false"
             card_view:cardCornerRadius="15dp">
 
 
@@ -101,7 +103,7 @@
                 android:textColor="#000"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:padding="10dp"
                 android:layout_weight="4.5"/>
 
@@ -109,6 +111,8 @@
 
             </LinearLayout>
 
+
+        </android.support.v7.widget.CardView>
 
         </android.support.v7.widget.CardView>
 

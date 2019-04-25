@@ -1,9 +1,7 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
 import android.content.pm.ActivityInfo;
-import android.content.res.Resources;
 import android.os.Build;
-import android.support.annotation.DrawableRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Fade;
@@ -13,8 +11,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.GlideBuilder;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -122,7 +118,7 @@ public class Datos extends AppCompatActivity {
         Picasso.get().load(drawableRes).into(perfil, new Callback() {
                     @Override
                     public void onSuccess() {
-                        supportStartPostponedEnterTransition();
+                         ();
                     }
 
                     @Override

@@ -1,30 +1,25 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
 
 public class Horarios extends AppCompatActivity {
 
     LinearLayout linearLayout;
     ImageView logo, creditos;
-    CardView cv_registro, cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo;
+    CardView cv_mira_futuro, cv_personalidad, cv_radical, cv_prospectiva, cv_pasion_haver, cv_detras_miedo;
+    Button btn_mira_futuro, btn_personalidad, btn_radical, btn_prospectiva, btn_pasion_haver, btn_detras_miedo;
     static String Titulo= "";
 
     @Override
@@ -46,7 +41,6 @@ public class Horarios extends AppCompatActivity {
         linearLayout.setLayoutAnimation(layoutAnimationController);
         linearLayout.scheduleLayoutAnimation();
 
-        cv_registro=findViewById(R.id.h_cv_Registro);
         cv_mira_futuro= findViewById(R.id.h_cv_Mira_futuro);
         cv_personalidad=findViewById(R.id.h_cv_Personalidad);
         cv_radical= findViewById(R.id.h_cv_Radical);
@@ -54,14 +48,56 @@ public class Horarios extends AppCompatActivity {
         cv_pasion_haver= findViewById(R.id.h_cv_Pasion_hacer);
         cv_detras_miedo=findViewById(R.id.h_cv_Detras_miedo);
 
-        cv_registro.setOnClickListener(new View.OnClickListener() {
+        btn_mira_futuro= findViewById(R.id.h_btn_Mira_futuro);
+        btn_personalidad=findViewById(R.id.h_btn_Personalidad);
+        btn_radical= findViewById(R.id.h_btn_Radical);
+        btn_prospectiva=findViewById(R.id.h_btn_Prospectiva);
+        btn_pasion_haver= findViewById(R.id.h_btn_Pasion_hacer);
+        btn_detras_miedo=findViewById(R.id.h_btn_Detras_miedo);
+
+        cv_mira_futuro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Titulo= "Registro y Acceso";
+
             }
         });
 
-        cv_mira_futuro.setOnClickListener(new View.OnClickListener() {
+        cv_detras_miedo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cv_pasion_haver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cv_prospectiva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cv_radical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        cv_personalidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        btn_mira_futuro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
@@ -73,7 +109,7 @@ public class Horarios extends AppCompatActivity {
             }
         });
 
-        cv_personalidad.setOnClickListener(new View.OnClickListener() {
+        btn_personalidad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
@@ -86,7 +122,7 @@ public class Horarios extends AppCompatActivity {
             }
         });
 
-        cv_radical.setOnClickListener(new View.OnClickListener() {
+        btn_radical.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
@@ -99,7 +135,7 @@ public class Horarios extends AppCompatActivity {
             }
         });
 
-        cv_prospectiva.setOnClickListener(new View.OnClickListener() {
+        btn_prospectiva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
@@ -112,7 +148,7 @@ public class Horarios extends AppCompatActivity {
             }
         });
 
-        cv_pasion_haver.setOnClickListener(new View.OnClickListener() {
+        btn_pasion_haver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();
@@ -125,7 +161,7 @@ public class Horarios extends AppCompatActivity {
             }
         });
 
-        cv_detras_miedo.setOnClickListener(new View.OnClickListener() {
+        btn_detras_miedo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Splash.listaClick.clear();

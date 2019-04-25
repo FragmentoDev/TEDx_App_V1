@@ -1,4 +1,4 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

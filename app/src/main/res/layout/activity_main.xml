@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="7dp"
                 android:textAlignment="textStart"
-                android:drawableLeft="@drawable/ic_clock"
+                android:drawableLeft="@drawable/ic_time_white"
                 android:text="  Horarios para conferencias"
                 android:textAllCaps="false"
                 android:textSize="17sp"

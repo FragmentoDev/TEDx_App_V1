@@ -1,4 +1,4 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
 public class Conferencistas {
     private String Nombre;

@@ -42,13 +42,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp"
                 android:foreground="?android:attr/selectableItemBackground"
@@ -83,21 +76,25 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#DADADA"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:contentPadding="2dp">
+
+            <android.support.v7.widget.CardView
                 android:id="@+id/h_cv_Mira_futuro"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:backgroundTint="#fff"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
-                android:layout_marginVertical="10dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                card_view:cardCornerRadius="5dp">
+                android:foreground="?android:attr/selectableItemBackground">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -149,7 +146,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="2"
-                        android:layout_marginVertical="20dp"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -170,19 +167,26 @@
 
                 </LinearLayout>
 
+                <Button
+                    android:id="@+id/h_btn_Mira_futuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver mas"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:theme="@style/BotonCard" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
@@ -217,19 +221,24 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#DADADA"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:contentPadding="2dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
-                android:layout_marginVertical="10dp"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:id="@+id/h_cv_Personalidad"
-                card_view:cardCornerRadius="15dp">
+                android:id="@+id/h_cv_Personalidad">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -280,7 +289,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:weightSum="3"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -310,25 +319,30 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_grabacion"
-                        android:layout_marginBottom="5dp" />
+                        android:src="@drawable/ic_grabacion" />
 
+                </LinearLayout>
+
+                    <Button
+                        android:id="@+id/h_btn_Personalidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver mas"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorAccent"
+                        android:theme="@style/BotonCard" />
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
 
+        </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp">
@@ -363,19 +377,24 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#DADADA"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:contentPadding="2dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
-                android:layout_marginVertical="10dp"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:id="@+id/h_cv_Radical"
-                card_view:cardCornerRadius="15dp">
+                android:id="@+id/h_cv_Radical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -426,6 +445,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
                         <de.hdodenhof.circleimageview.CircleImageView
@@ -471,12 +491,25 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_grabacion"
-                        android:layout_marginBottom="5dp" />
+                        android:src="@drawable/ic_grabacion" />
 
                 </LinearLayout>
 
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/h_btn_Radical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver mas"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"
+                    android:theme="@style/BotonCard" />
+
+        </LinearLayout>
+
+            </android.support.v7.widget.CardView>
 
             </android.support.v7.widget.CardView>
 
@@ -484,13 +517,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp">
@@ -525,19 +551,24 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#DADADA"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:contentPadding="2dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:layout_marginVertical="10dp"
-                android:id="@+id/h_cv_Prospectiva"
-                card_view:cardCornerRadius="15dp">
+                android:id="@+id/h_cv_Prospectiva">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -585,7 +616,7 @@
                     android:textSize="18sp"/>
 
                     <LinearLayout
-                        android:layout_marginVertical="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -616,19 +647,26 @@
 
                 </LinearLayout>
 
+                    <Button
+                        android:id="@+id/h_btn_Prospectiva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ver mas"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorAccent"
+                        android:theme="@style/BotonCard" />
+
+        </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
@@ -663,19 +701,24 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#DADADA"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:contentPadding="2dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
-                android:layout_marginVertical="10dp"
                 android:id="@+id/h_cv_Pasion_hacer"
-                android:foreground="?android:attr/selectableItemBackground"
-                card_view:cardCornerRadius="15dp">
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -755,7 +798,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
-                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -779,19 +821,26 @@
 
                 </LinearLayout>
 
+            <Button
+                android:id="@+id/h_btn_Pasion_hacer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mas"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/BotonCard" />
+
+        </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:layout_marginVertical="10dp"
                 android:foreground="?android:attr/selectableItemBackground"
                 card_view:cardCornerRadius="5dp">
@@ -826,19 +875,24 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                card_view:cardBackgroundColor="#DADADA"
+                android:layout_marginVertical="10dp"
+                card_view:cardCornerRadius="8dp"
+                card_view:contentPadding="2dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
-                android:layout_marginVertical="10dp"
                 android:id="@+id/h_cv_Detras_miedo"
-                android:foreground="?android:attr/selectableItemBackground"
-                card_view:cardCornerRadius="15dp">
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -886,7 +940,7 @@
                         android:textSize="18sp"/>
 
                     <LinearLayout
-                        android:layout_marginVertical="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:weightSum="3"
@@ -917,19 +971,26 @@
 
                 </LinearLayout>
 
+            <Button
+                android:id="@+id/h_btn_Detras_miedo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver mas"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:theme="@style/BotonCard" />
+
+        </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#000"
-                android:elevation="8dp"
-                android:divider="@android:color/transparent"
-                android:dividerHeight="0.0px"
-                android:clipToPadding="false"
-                android:clipChildren="false"
-                card_view:cardElevation="10dp"
-                card_view:cardPreventCornerOverlap="false"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_marginVertical="10dp"
                 card_view:cardCornerRadius="5dp">

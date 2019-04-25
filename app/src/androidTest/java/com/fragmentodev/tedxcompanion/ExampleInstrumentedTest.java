@@ -1,4 +1,4 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,9 +1,7 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by msc10 on 19/02/2017.

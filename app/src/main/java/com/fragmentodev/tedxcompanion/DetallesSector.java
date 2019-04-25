@@ -1,18 +1,13 @@
-package com.fernandoalberto.tedxcompanion;
+package com.fragmentodev.tedxcompanion;
 
-import android.app.Activity;
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v4.util.Pair;
 import android.transition.Fade;
@@ -21,12 +16,8 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class DetallesSector extends AppCompatActivity implements PerfilItemClickListener {
 
@@ -85,8 +76,7 @@ public class DetallesSector extends AppCompatActivity implements PerfilItemClick
         Pair<View, String> p2 = Pair.create((View)nombre, EXTRA_PERFIL_NOMBRE_TRANSITION_NAME);
         Pair<View, String> p3 = Pair.create((View)taller, EXTRA_PERFIL_TALLER_TRANSITION_NAME);
         Pair<View, String> p4 = Pair.create((View)grabacion, EXTRA_PERFIL_GRABACION_TRANSITION_NAME);
-        ActivityOptionsCompat options = ActivityOptionsCompat.
-                makeSceneTransitionAnimation(DetallesSector.this, p1, p2, p3, p4);
+        ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(DetallesSector.this, p1, p2, p3, p4);
         startActivity(intent, options.toBundle());
     }
 }
